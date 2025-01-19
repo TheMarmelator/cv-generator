@@ -7,6 +7,7 @@
 
     /* Colors */
     --title-color: #0B0A0A;
+    --text-color-bright: #323232;
     --text-color: #403A3A;
     --text-color-light: #707070;
     --container-color: #FAFAFA;
@@ -32,7 +33,7 @@
     /* Margins */
     --margin-1: .5rem;
     --margin-2: 1rem;
-    --margin-3: 1.5rem;
+    --margin-3: 1.0rem;
 
     /* Z Index */
     --z-tooltip: 10;
@@ -71,7 +72,9 @@ html {
 
 body.dark-theme {
     --title-color: #F2F2F2;
+    --text-color-bright: #D0D0D0;
     --text-color: #BFBFBF;
+    --text-color-light: #A0A0A0;
     --container-color: #212121;
     --container-color-alt: #181616;
     --body-color: #2B2B2B;
@@ -95,6 +98,10 @@ body.dark-theme {
 
 /* Scale CV */
 
+/* .main_area {
+    width: 30%;
+} */
+
 body.scale-cv {
     --h1-font-size: 0.938rem;
     --h2-font-size: 0.938rem;
@@ -112,23 +119,25 @@ body.scale-cv {
 }
 
 .scale-cv .bd-container {
-    max-width: 695px;
+    max-width: 795px;
 }
 
 .scale-cv .section {
-    padding: 1.5rem 0 0.80rem;
+    padding: 1.0rem 0 0.80rem;
 }
 
 .scale-cv .section-title {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.55rem;
 }
 
 .scale-cv .resume {
+    /* height: 1122px; */
     height: 1122px;
 }
 
 .scale-cv .resume_left {
-    width: 250px;
+    /* width: 250px; */
+    width: 280px;
     padding: 0 1.25rem;
 }
 
@@ -137,8 +146,8 @@ body.scale-cv {
 }
 
 .scale-cv .home_img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .scale-cv .home_container {
@@ -210,6 +219,7 @@ body.scale-cv {
 .experience_data {
     width: 100%;
     gap: .1rem;
+    padding-bottom: 10px;
 }
 
 /* -----------------  ----------------- */
@@ -223,7 +233,7 @@ body.scale-cv {
 }
 
 .experience_title {
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
 }
 
 .experience_time {
@@ -241,8 +251,8 @@ body.scale-cv {
 }
 
 .experience_company {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    /* font-size: var(--small-font-size); */
+    color: var(--text-color-bright);
 }
 
 .fa-small {
@@ -254,7 +264,7 @@ body.scale-cv {
 
 .experience_location {
     font-size: var(--tiny-font-size);
-    color: var(--text-color-light);
+    color: var(--text-color-bright);
     text-align: right;
     vertical-align: middle;
     /* padding-top: 10px; */
@@ -270,7 +280,7 @@ body.scale-cv {
 
 .experience_description {
     color: var(--text-color-light);
-    font-size: var(--tiny-font-size);
+    /* font-size: var(--small-font-size); */
     padding-top: 0.8em;
 }
 
@@ -397,7 +407,7 @@ img {
 /* Class CSS */
 
 .section {
-    padding: 1.5rem 0;
+    padding: 1.0rem 0;
 }
 
 .section-title {
@@ -593,15 +603,15 @@ img {
     gap: 1rem; */
     display: flex;
     /* Use flexbox for horizontal layout */
-    justify-content: center;
+    justify-content: space-evenly;
     /* Center the icons */
-    gap: 10px;
+    /* gap: 5px; */
     /* Space between icons */
     align-items: center;
     /* Align icons vertically */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* Wrap icons if there's not enough space */
-    padding: 10px;
+    padding: 5px;
 }
 
 .social_link {
@@ -715,16 +725,17 @@ img {
 
 .skills_name {
     margin-bottom: .25rem;
+    justify-content: space-evenly;
 }
 
 .skills_text {
     display: inline-block;
-    width: 100px;
+    width: 120px;
 }
 
 .skills_box {
     display: inline-block;
-    width: 150px;
+    width: 165px;
     height: 10px;
     border-radius: 6px;
     overflow: hidden;
@@ -736,6 +747,7 @@ img {
     display: block;
     height: 10px;
     border-radius: 6px;
+    width: 175px;
 }
 
 /* Languages */
@@ -851,7 +863,8 @@ img {
 
     .resume_left,
     .right_side_main {
-        padding: 0 1.5rem;
+        padding: 0 1.0rem;
+        
     }
 
     .generate-pdf {
