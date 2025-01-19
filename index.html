@@ -1,327 +1,436 @@
 <!--
- ┌──────────────────────────────────────────────────────────────────────┐
- │ @name         CV generator                                           │
- │ @author       Isaac Riley                                            │
- │ @version      1.0                                                    │
- │ @created      2022-12-19                                             │
- │ @modified     2023-03-17                                             │
- │ @description  Resume CV with dark/light mode and PDF export          │
- └──────────────────────────────────────────────────────────────────────┘
+ ┌───────────────────────────────────────────────────────────────────────┐
+ │ @name         CV generator                                            │
+ │ @author       Isaac Riley                                             │
+ │ @version      1.0                                                     │
+ │ @created      2025-01-18                                              │
+ │ @description  CV built with HTML+CSS+JS: dark mode toggle, PDF export │
+ └───────────────────────────────────────────────────────────────────────┘
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Responsive Resume CV</title>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Import Fontawesome -->
-        <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
+    <title>Isaac Riley CV</title>
 
-        <!-- Import stylesheets in CSS3 -->
-        <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css">
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/pictures/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/pictures/favicon/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/pictures/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/pictures/favicon/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="assets/pictures/favicon/android-chrome-512x512.png">
-    </head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/pictures/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/pictures/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/pictures/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/pictures/favicon/android-chrome-512x512.png">
+</head>
 
-    <body>
-        <header class="l-header" id="header">
-            <!-- Nav menu -->
-            <nav class="nav bd-container">
-                <a href="#" class="nav_logo">Isaac RILEY</a>
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list">
+<body>
+    <header class="menu_header" id="header">
+        <!-- Nav menu -->
+        <nav class="nav bd-container">
+            <a href="#" class="nav_logo">Isaac RILEY</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
 
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link active-link">
-                                <i class="fa-solid fa-house nav_icon"></i>Home
-                            </a>
-                        </li>
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="fa-solid fa-house nav_icon"></i>Home
+                        </a>
+                    </li>
 
-                        <li class="nav_item">
-                            <a href="#profile" class="nav_link">
-                                <i class="fa-solid fa-user nav_icon"></i>Profile
-                            </a>
-                        </li>
+                    <li class="nav_item">
+                        <a href="#profile" class="nav_link">
+                            <i class="fa-solid fa-user nav_icon"></i>Profile
+                        </a>
+                    </li>
 
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class="fa-solid fa-computer nav_icon"></i>Skills
-                            </a>
-                        </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="fa-solid fa-computer nav_icon"></i>Skills
+                        </a>
+                    </li>
 
-                        <li class="nav_item">
-                            <a href="#languages" class="nav_link">
-                                <i class="fa-solid fa-comments nav_icon"></i>Languages
-                            </a>
-                        </li>
+                    <li class="nav_item">
+                        <a href="#languages" class="nav_link">
+                            <i class="fa-solid fa-comments nav_icon"></i>Languages
+                        </a>
+                    </li>
 
-                        <li class="nav_item">
-                            <a href="#experience" class="nav_link">
-                                <i class="fa-solid fa-briefcase nav_icon"></i>Experiences
-                            </a>
-                        </li>
+                    <li class="nav_item">
+                        <a href="#experience" class="nav_link">
+                            <i class="fa-solid fa-briefcase nav_icon"></i>Experiences
+                        </a>
+                    </li>
 
-                        <li class="nav_item">
-                            <a href="#certificates" class="nav_link">
-                                <i class="fa-solid fa-graduation-cap nav_icon"></i>Certificates
-                            </a>
-                        </li>
+                    <li class="nav_item">
+                        <a href="#certificates" class="nav_link">
+                            <i class="fa-solid fa-graduation-cap nav_icon"></i>Certificates
+                        </a>
+                    </li>
 
-                        <li class="nav_item">
-                            <a href="#education" class="nav_link">
-                                <i class="fa-solid fa-book-bookmark nav_icon"></i>Education
-                            </a>
-                        </li>
+                    <li class="nav_item">
+                        <a href="#education" class="nav_link">
+                            <i class="fa-solid fa-book-bookmark nav_icon"></i>Education
+                        </a>
+                    </li>
 
-                        <li class="nav_item">
-                            <a href="#interests" class="nav_link">
-                                <i class="fa-solid fa-icons nav_icon"></i>Interests
-                            </a>
-                        </li>
+                    <li class="nav_item">
+                        <a href="#interests" class="nav_link">
+                            <i class="fa-solid fa-icons nav_icon"></i>Interests
+                        </a>
+                    </li>
 
-                    </ul>
-                </div>
+                </ul>
+            </div>
 
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </nav>
-        </header>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-        <main class="l-main bd-container">
-            <!-- Resume CV -->
-            <div class="resume" id="area-cv">
-                <div class="resume_left">
+    <main class="l-main bd-container">
+        <!-- Resume CV -->
+        <div class="resume" id="area-cv">
+            <div class="resume_left">
 
-                    <!-- HOME -->
-                    <section class="home" id="home">
-                        <div class="home_container section bd-grid">
+                <!-- HOME -->
+                <section class="home" id="home">
+                    <div class="home_container section bd-grid">
 
-                            <div class="home_data bd-grid">
-                                <img src="assets/pictures/profile.png" alt="Icon picture" class="home_img" id="home-img">
-                                <!--<img alt="Icon picture" class="home_img" id="home-img">-->
-                                <h1 class="home_title">ISAAC <b>RILEY</b></h1>
-                                <h3 class="home_profession">Machine Learning Engineer</h3>
-                                <div>
-                                    <a download="" id="download-button" class="home_button-movil">Download</a>
+                        <div class="home_data bd-grid">
+                            <img src="assets/pictures/profile-black.jpg" alt="Icon picture" class="home_img"
+                                id="home-img">
+                            <!--<img alt="Icon picture" class="home_img" id="home-img">-->
+                            <h1 class="home_title">ISAAC <b>RILEY</b></h1>
+                            <h3 class="home_profession">Machine Learning Engineer</h3>
+                            <div>
+                                <a download="" id="download-button" class="home_button-movil">Download</a>
+                            </div>
+                        </div>
+
+                        <div class="home_address bd-grid">
+                            <span class="home_information">
+                                <a href="https://www.openstreetmap.org/#map=11/49.3540/8.6998" class="home_link">
+                                    <i class="fa-solid fa-location-dot home_icon"></i> Rhein-Neckar Region, Germany
+                                </a>
+                            </span>
+                            <span class="home_information">
+                                <a href="mailto:isaac.r.riley@proton.me" class="home_link">
+                                    <i class="fa-solid fa-envelope home_icon"></i> isaac.r.riley@proton.me
+                                </a>
+                            </span>
+                            <span class="home_information">
+                                <a href="tel:+4901627174019" class="home_link">
+                                    <i class="fa-solid fa-phone home_icon"></i> +49 0162 7174019
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Theme change button -->
+                    <i class="fa-solid fa-moon change-theme" title="Theme" id="theme-button"></i>
+
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="fa-solid fa-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+
+                </section>
+
+                <!-- SOCIAL -->
+                <section class="social section">
+                    <!-- <div class="social_header"></div> -->
+                    <!-- <h2 class="section-title">Social</h2> -->
+                    <!-- <span class="social_name">@yelircaasi</span> -->
+                    <!-- </div> -->
+                    <div class="social_name bd-grid">
+                        <h2 class="section-title">Socials</h2>
+                        <div class="social_handle_container">
+                            <a class="social_handle">@yelircaasi</a>
+                        </div>
+
+                    </div>
+                    <div class="social_container bd-grid">
+                        <a href="https://github.com/yelircaasi" target="_blank" class="social_link">
+                            <i class="fa-brands fa-github social_icon"></i></a>
+                        <a href="https://www.linkedin.com/in/yelircaasi/" target="_blank" class="social_link">
+                            <i class="fa-brands fa-linkedin social_icon"></i></a>
+                        <a href="https://rheinneckar.social/@yelircaasi" target="_blank" class="social_link">
+                            <i class="fa-brands fa-mastodon social_icon"></i></a>
+                        <a href="https://bsky.app/profile/yelircaasi.bsky.social" target="_blank" class="social_link">
+                            <i class="fa-brands fa-bluesky social_icon"></i></a>
+                        <a href="https://www.reddit.com/user/yelircaasi/" target="_blank" class="social_link">
+                            <i class="fa-brands fa-reddit social_icon"></i></a>
+                    </div>
+                </section>
+
+                <!-- PROFILE -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+
+                    <p class="profile_description">
+                        Deep expertise in Python, machine learning, and Nix, complemented by proficiency in a wide array
+                        of other languages and tools.
+                        Committed to clean, maintainable software design emphasizing scalability, clarity, and
+                        robustness.
+                        Firm believer in the power of static type-checking (mypy), data models and validation
+                        (pydantic), thorough testing (pytest), and pre-commit hooks (lefthook).
+                    </p>
+                </section>
+
+                <!-- SKILLS  -->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills_container">
+                        <div class="skills_content bd-grid">
+
+                            <div class="skills_name">
+                                <span class="skills_text">Python</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 100%;"></span>
                                 </div>
                             </div>
+                            <div class="skills_name">
+                                <span class="skills_text">PyTorch</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 100%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills_name">
+                                <span class="skills_text">TensorFlow</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 100%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills_name">
+                                <span class="skills_text">Nix/NixOS</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 90%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills_name">
+                                <span class="skills_text">Git</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 90%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills_name">
+                                <span class="skills_text">Julia</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 85%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills_name">
+                                <span class="skills_text">HTML+CSS</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 95%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills_name">
+                                <span class="skills_text">TypeScript</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 80%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills_name">
+                                <span class="skills_text">Haskell</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 70%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills_name">
+                                <span class="skills_text">Rust</span>
+                                <div class="skills_box">
+                                    <span class="skills_progress" style="width: 70%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="home_address bd-grid">
-                                <span class="home_information">
-                                    <i class="fa-solid fa-location-dot home_icon"></i> Port-Jérôme sur Seine - France
+                </section>
+
+                <!-- LANGUAGES -->
+                <section class="languages section" id="languages">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages_container">
+                        <ul class="languages_content bd-grid">
+                            <li class="languages_name">
+                                <span class="languages_text">English</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                 </span>
-                                <span class="home_information">
-                                    <a href="mailto:leagallier.lag@gmail.com" class="home_link">
-                                        <i class="fa-solid fa-envelope home_icon"></i> leagallier.lag@gmail.com
-                                    </a>
+                            </li>
+                            <li class="languages_name">
+                                <span class="languages_text">German</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                 </span>
-                                <span class="home_information">
-                                    <a href="tel:+33611451165" class="home_link">
-                                        <i class="fa-solid fa-phone home_icon"></i> 06.11.45.11.65
-                                    </a>
+                            </li>
+                            <li class="languages_name">
+                                <span class="languages_text">Russian</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_checked"></i>
                                 </span>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="languages_name">
+                                <span class="languages_text">French</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_checked"></i>
+                                </span>
+                            </li>
+                            <li class="languages_name">
+                                <span class="languages_text">Ukrainian</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_checked"></i>
+                                    <i class="fa-solid fa-star languages_stars_checked"></i>
+                                </span>
+                            </li>
+                            <li class="languages_name">
+                                <span class="languages_text">Spanish</span>
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_checked"></i>
+                                    <i class="fa-solid fa-star languages_stars_checked"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-                        <!-- Theme change button -->
-                        <i class="fa-solid fa-moon change-theme" title="Theme" id="theme-button"></i>
+            </div>
 
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
-                        <i class="fa-solid fa-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+            <div class="right_side_main">
 
-                    </section>
+                <!-- EXPERIENCE -->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
 
-                    <!-- SOCIAL -->
-                    <section class="social section">
-                        <h2 class="section-title">Social</h2>
+                    <div class="experience_container bd-grid">
+                        <div class="experience_content">
+                            <div class="experience_data">
+                                <div class="experience_heading">
+                                    <h3 class="experience_title">RESEARCH ENGINEER</h3>
+                                    <span class="experience_time">October 2021 - present</span>
+                                </div>
 
-                        <div class="social_container bd-grid">
-                            <a href="https://github.com/LeaG76" target="_blank" class="social_link">
-                                <i class="fa-brands fa-github social_icon"></i> @Leag76
-                            </a>
-                            <a href="https://codepen.io/leag76" target="_blank" class="social_link">
-                                <i class="fa-brands fa-codepen social_icon"></i> @leag76
-                            </a>
-                            <a href="https://www.linkedin.com/in/leagallier76/" target="_blank" class="social_link">
-                                <i class="fa-brands fa-linkedin social_icon"></i> leagallier76
-                            </a>
-                        </div>
-                    </section>
-
-                    <!-- PROFILE -->
-                    <section class="profile section" id="profile">
-                        <h2 class="section-title">Profile</h2>
-
-                        <p class="profile_description">
-                            I'm actually a student in computer science at the University of Le Havre Normandie. This year is
-                            my last year of master's degree in computer science at the university. But this year I also
-                            joined the IES Ingénierie team by becoming an analyst developer in work-study training.
-                        </p>
-                    </section>
-
-                    <!-- SKILLS  -->
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">Skills</h2>
-                        <div class="skills_container">
-                            <div class="skills_content bd-grid">
-                                <div class="skills_name">
-                                    <span class="skills_text">CSS</span>
-                                    <div class="skills_box">
-                                        <span class="skills_progress" style="width: 85%;"></span>
+                                <div class="experience_info">
+                                    <span class="experience_company">knecon Technologie GmbH</span>
+                                    <div>
+                                        <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
+                                        <span class="experience_location">Mannheim, Germany</span>
                                     </div>
                                 </div>
-                                <div class="skills_name">
-                                    <span class="skills_text">Git</span>
-                                    <div class="skills_box">
-                                        <span class="skills_progress" style="width: 75%;"></span>
-                                    </div>
-                                </div>
-                                <div class="skills_name">
-                                    <span class="skills_text">HTML</span>
-                                    <div class="skills_box">
-                                        <span class="skills_progress" style="width: 95%;"></span>
-                                    </div>
-                                </div>
-                                <div class="skills_name">
-                                    <span class="skills_text">Javascript</span>
-                                    <div class="skills_box">
-                                        <span class="skills_progress" style="width: 80%;"></span>
-                                    </div>
-                                </div>
-                                <div class="skills_name">
-                                    <span class="skills_text">MySQL</span>
-                                    <div class="skills_box">
-                                        <span class="skills_progress" style="width: 70%;"></span>
-                                    </div>
-                                </div>
+
+                                <p class="experience_description">
+                                    Developed a face-recognition system using dlib, C++, and Python.
+                                </p>
                             </div>
                         </div>
-
-                    </section>
-
-                    <!-- LANGUAGES -->
-                    <section class="languages section" id="languages">
-                        <h2 class="section-title">Languages</h2>
-
-                        <div class="languages_container">
-                            <ul class="languages_content bd-grid">
-                                <li class="languages_name">
-                                    <span class="languages_text">French</span>
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                </li>
-                                <li class="languages_name">
-                                    <span class="languages_text">English</span>
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star languages_stars_checked"></i>
-                                        <i class="fa-solid fa-star languages_stars_checked"></i>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-
-                </div>
-
-                <div class="resume_right">
-
-                    <!-- EXPERIENCE -->
-                    <section class="experience section" id="experience">
-                        <h2 class="section-title">Experience</h2>
-
-                        <div class="experience_container bd-grid">
-                            <div class="experience_content">
-                                <div class="experience_time">
-                                    <span class="experience_rounder"></span>
-                                    <span class="experience_line"></span>
+                        <div class="experience_content">
+                            <div class="experience_data">
+                                <div class="experience_heading">
+                                    <h3 class="experience_title">DATA SCIENTIST</h3>
+                                    <span class="experience_time">April 2021 - June 2021</span>
                                 </div>
-                                <div class="experience_data bd-grid">
-                                    <h3 class="experience_title">ANALYST PROGRAMMER</h3>
-                                    <span class="experience_company">Sandwichcourse | IES Ingénierie - France</span>
-                                    <span class="experience_year">October 2022 - present</span>
-                                    <p class="experience_description">
-                                        Work in this company dedicating the best responsibility in the area that
-                                        corresponds, delivering the best results for the company and improving productivity.
-                                    </p>
+
+                                <div class="experience_info">
+                                    <span class="experience_company">Internship | backpackertrail</span>
+                                    <div>
+                                        <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
+                                        <span class="experience_location">Heidelberg, Germany</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="experience_content">
-                                <div class="experience_time">
-                                    <span class="experience_rounder"></span>
-                                </div>
-                                <div class="experience_data bd-grid">
-                                    <h3 class="experience_title">ANALYST PROGRAMMER</h3>
-                                    <span class="experience_company">Internship | IES Ingénierie - France</span>
-                                    <span class="experience_year">April 2021 - June 2021</span>
-                                    <p class="experience_description">
-                                        Work in this company dedicating the best responsibility in the area that
-                                        corresponds, delivering the best results for the company and improving productivity.
-                                    </p>
-                                </div>
+
+                                <p class="experience_description">
+                                    Developed an image classication system built with Pytorch and laid the foundations
+                                    for a trip-planning tool built with ORTools.
+                                </p>
                             </div>
                         </div>
-                    </section>
+                        <div class="experience_content">
+                            <div class="experience_bullet">
 
-                    <!-- CERTIFICATES -->
-                    <section class="certificate section" id="certificates">
-                        <h2 class="section-title">Certificates</h2>
-
-                        <div class="certificate_container bd-grid">
-                            <div class="certificate_content">
-                                <div class="certificate_item">
-                                    <span class="certificate_rounder"></span>
-                                </div>
-                                <div class="certificate_data bd-grid">
-                                    <h3 class="certificate_year">2021</h3>
-                                    <span class="certificate_title">M.Sc. Computational Linguistics, University of Stuttgart</span>
-                                </div>
                             </div>
-                            <div class="certificate_content">
-                                <div class="certificate_item">
-                                    <span class="certificate_rounder"></span>
+                            <div class="experience_data">
+                                <div class="experience_heading">
+                                    <h3 class="experience_title">RESEARCH ASSISTANT</h3>
+                                    <span class="experience_time">July 2015 - May 2019</span>
                                 </div>
-                                <div class="certificate_data bd-grid">
-                                    <h3 class="certificate_year">2021</h3>
-                                    <span class="certificate_title">Bachelor in Computer Science
-                                        <span class="certificate_honours">with honours</span>
-                                    </span>
+                                <div class="experience_info">
+                                    <span class="experience_company">Brigham Young University Economics
+                                        Department</span>
+                                    <div>
+                                        <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
+                                        <span class="experience_location">Provo UT, USA</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="certificate_content">
-                                <div class="certificate_item">
-                                    <span class="certificate_rounder"></span>
-                                </div>
-                                <div class="certificate_data bd-grid">
-                                    <h3 class="certificate_year">2018</h3>
-                                    <span class="certificate_title">High School diploma in Sciences, speciality Mathematics
-                                        <span class="certificate_honours">with honours</span>
-                                    </span>
-                                </div>
+                                <p class="experience_description">
+                                    Implemented an XGBoost-driven system for entity matching across historical records
+                                    for historical economics research. Created a pipeline for cleaning and entity
+                                    recognition of patent records.
+                                </p>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!-- EDUCATION -->
+                <!-- CERTIFICATES -->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificate_container">
+                        <div class="certificate_content">
+                            <div class="certificate_data">
+                                <h3 class="certificate_title">M.Sc. Computational Linguistics</h3>
+                                <span class="certificate_institution">University of Stuttgart</span>
+
+                            </div>
+                            <span class="certificate_year">2021</span>
+                        </div>
+                        <div class="certificate_content">
+                            <div class="certificate_data">
+                                <h3 class="certificate_title">B.S. Economics</h3>
+                                <span class="certificate_institution">Brigham Young University, Provo UT, USA </span>
+                            </div>
+                            <span class="certificate_year">2018</span>
+                        </div>
+                        <div class="certificate_content">
+                            <div class="certificate_data">
+                                <h3 class="certificate_title">High School Diploma</h3>
+                                <span class="certificate_institution">James Bowie High School, Austin TX, USA</span>
+                            </div>
+                            <span class="certificate_year">2011</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCATION
                     <section class="education section" id="education">
                         <h2 class="section-title">Education</h2>
 
@@ -359,55 +468,76 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section>  -->
 
-                    <!-- INTERESTS -->
-                    <section class="interests section" id="interests">
-                        <h2 class="section-title">Interests</h2>
-                        <div class="interests_container bd-grid">
-                            <div class="interests_content">
-                                <i class="fa-solid fa-paw interests_icon"></i>
-                                <span class="interests_name">Animals</span>
-                            </div>
-                            <div class="interests_content">
-                                <i class="fa-solid fa-dragon interests_icon"></i>
-                                <span class="interests_name">Dinosaurs</span>
-                            </div>
-                            <div class="interests_content">
-                                <i class="fa-solid fa-film interests_icon"></i>
-                                <span class="interests_name">Movies/Series</span>
-                            </div>
-                            <div class="interests_content">
-                                <i class="fa-solid fa-leaf interests_icon"></i>
-                                <span class="interests_name">Nature</span>
-                            </div>
-                            <div class="interests_content">
-                                <i class="fa-solid fa-code interests_icon"></i>
-                                <span class="interests_name">Program</span>
-                            </div>
-                            <div class="interests_content">
-                                <i class="fa-solid fa-gamepad interests_icon"></i>
-                                <span class="interests_name">Video games</span>
-                            </div>
+                <!-- INTERESTS -->
+                <section class="interests section" id="interests">
+                    <h2 class="section-title">Interests</h2>
+                    <div class="interests_container bd-grid">
+                        <div class="interests_content">
+                            <i class="fa fa-linux interests_icon"></i>
+                            <span class="interests_name">Linux</span>
                         </div>
-                    </section>
+                        <div class="interests_content">
+                            <img src="assets/icons/nix-snowflake-colours.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">NixOS</span>
+                        </div>
+                        <div class="interests_content">
+                            <i class="fa-solid fa-futbol interests_icon"></i>
+                            <span class="interests_name">Football</span>
+                        </div>
+                        <!-- <div class="interests_content">
+                            <i class="fa-solid fa-leaf interests_icon"></i>
+                            <span class="interests_name">Nature</span>
+                        </div> -->
+                        <!-- <div class="interests_content">
+                            <i class="fa-solid fa-code interests_icon"></i>
+                            <span class="interests_name">Programming</span>
+                        </div> -->
+                        <div class="interests_content">
+                            <img src="assets/icons/tensorflow.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">TensorFlow</span>
+                        </div>
+                        <div class="interests_content">
+                            <img src="assets/icons/julia-dots.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">Julia</span>
+                        </div>
+                        <div class="interests_content">
+                            <img src="assets/icons/haskell.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">Haskell</span>
+                        </div>
+                        <div class="interests_content">
+                            <img src="assets/icons/rust.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">Rust</span>
+                        </div>
+                        <div class="interests_content">
+                            <img src="assets/icons/python.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">Python</span>
+                        </div>
+                        <div class="interests_content">
+                            <!-- <i class="fa-brands fa-pytorch interests_icon"></i> -->
+                            <img src="assets/icons/pytorch-logo-flame.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">Pytorch</span>
+                        </div>
+                    </div>
+                </section>
 
-                </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class="fa-solid fa-arrow-up scrolltop_icon"></i>
-        </a>
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="fa-solid fa-arrow-up scrolltop_icon"></i>
+    </a>
 
-        <!-- HTML2PDF.js -->
-            <!-- Version 0.8.0 -->
-        <!-- <script src="assets/javascripts/html2pdf.v0.8.0.bundle.min.js"></script> -->
-            <!-- Version 0.9.3 -->
-        <script src="assets/javascripts/html2pdf.v0.9.3.bundle.min.js"></script>
+    <!-- HTML2PDF.js -->
+    <!-- Version 0.8.0 -->
+    <!-- <script src="assets/javascripts/html2pdf.v0.8.0.bundle.min.js"></script> -->
+    <!-- Version 0.9.3 -->
+    <script src="assets/javascripts/html2pdf.v0.9.3.bundle.min.js"></script>
 
-        <!-- Main Javascript file -->
-        <script src="assets/javascripts/main.js"></script>
-    </body>
+    <!-- Main Javascript file -->
+    <script src="assets/javascripts/main.js"></script>
+</body>
 
 </html>

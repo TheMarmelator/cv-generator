@@ -1,5 +1,5 @@
-/* Google Font Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Google Font Montserrat (alternatives: Pop pins, La to, Mont serrat, Nun ito, Quick sand, Rale way, Rob oto) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /* Variables */
 :root {
@@ -14,7 +14,7 @@
     --body-color: #FCFCFC;
 
     /* Typography */
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Montserrat', sans-serif;
 
     /* Fonts size */
     --h1-font-size: 1.5rem;
@@ -23,6 +23,7 @@
     --normal-font-size: .938rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
+    --tiny-font-size: .75rem;
 
     /* Fonts weight */
     --font-medium: 500;
@@ -131,7 +132,7 @@ body.scale-cv {
     padding: 0 1.25rem;
 }
 
-.scale-cv .resume_right {
+.scale-cv .right_side_main {
     padding: 0 1rem 0 1.25rem;
 }
 
@@ -160,23 +161,27 @@ body.scale-cv {
 }
 
 .scale-cv .education_container,
-.scale-cv .experience_container,
-.scale-cv .certificate_container {
+.scale-cv,
+.scale-cv {
     width: 500px;
     gap: 1rem;
 }
 
 .scale-cv .education_time,
-.scale-cv .experience_time,
-.scale-cv .certificate_item {
+.scale-cv,
+.scale-cv {
     padding-right: 0.5rem;
 }
 
 .scale-cv .education_rounder,
-.scale-cv .experience_rounder {
+.scale-cv {
     width: 11px;
     height: 11px;
     margin-top: 0.22rem;
+}
+
+.experience_bullet {
+    padding-top: 10px;
 }
 
 .scale-cv .education_line,
@@ -186,12 +191,141 @@ body.scale-cv {
 }
 
 .scale-cv .education_data,
-.scale-cv .experience_data,
-.scale-cv .certificate_data {
+.scale-cv,
+.scale-cv {
     gap: 0.25rem;
 }
 
-.scale-cv .certificate_rounder {
+/* ============================= EXPERIENCE =============================  */
+
+.experience_container {
+    width: 100%;
+    gap: 1rem;
+}
+
+.experience_content {
+    display: flex;
+}
+
+.experience_data {
+    width: 100%;
+    gap: .1rem;
+}
+
+/* -----------------  ----------------- */
+.experience_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.experience_title {
+    font-size: var(--h3-font-size);
+}
+
+.experience_time {
+    font-size: var(--larger-font-size);
+    /* padding-right: 0.5rem; */
+}
+
+/* -----------------  ----------------- */
+.experience_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.experience_company {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.fa-small {
+    padding-right: 15px;
+    height: 10px;
+    width: 10px;
+    vertical-align: center;
+}
+
+.experience_location {
+    font-size: var(--tiny-font-size);
+    color: var(--text-color-light);
+    text-align: right;
+    vertical-align: middle;
+    /* padding-top: 10px; */
+}
+
+.location_icon {
+    color: #888;
+    fill: #888;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}
+
+.experience_description {
+    color: var(--text-color-light);
+    font-size: var(--tiny-font-size);
+    padding-top: 0.8em;
+}
+
+/* ============================= CERTIFICATE =============================  */
+
+
+.certificate_container {
+    display: grid;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.certificate_data {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 90%;
+    /* padding: 10px; */
+}
+
+.certificate_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificate_data {
+    gap: .35rem;
+}
+
+.certificate_institution {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    text-align: left;
+    /* padding-top: 10px; */
+}
+
+.certificate_title {
+    font-size: var(--h3-font-size);
+}
+
+.certificate_year {
+    font-size: var(--small-font-size);
+    text-align: right;
+    /* text-align-last: right; */
+    /* color: var(--text-color-light); */
+}
+
+.certificate_container {
+    gap: 0.75rem;
+}
+
+
+/* =============================  =============================  */
+
+.scale-cv {
     width: 4px;
     height: 4px;
 }
@@ -290,7 +424,7 @@ img {
     gap: 1.5rem;
 }
 
-.l-header {
+.menu_header {
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -455,8 +589,19 @@ img {
 /* Social page */
 
 .social_container {
-    grid-template-columns: max-content;
-    gap: 1rem;
+    /* grid-template-columns: max-content;
+    gap: 1rem; */
+    display: flex;
+    /* Use flexbox for horizontal layout */
+    justify-content: center;
+    /* Center the icons */
+    gap: 10px;
+    /* Space between icons */
+    align-items: center;
+    /* Align icons vertically */
+    flex-wrap: wrap;
+    /* Wrap icons if there's not enough space */
+    padding: 10px;
 }
 
 .social_link {
@@ -468,6 +613,27 @@ img {
 
 .social_link:hover {
     color: var(--title-color);
+}
+
+.social_name {
+    /* justify-content: space-between; */
+    color: #555;
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    display: flex;
+    align-items: top;
+    gap: 10px;
+
+}
+
+.social_handle_container {
+    width: 100%;
+    align-items: center;
+    padding-left: 1.2em;
+}
+
+.social_handle {
+    text-align: center;
 }
 
 .social_icon {
@@ -482,24 +648,21 @@ img {
 
 .profile_description {
     text-align: center;
+    /* font-size: var(--small-font-size); */
 }
 
 /* Education page */
 
-.education_content,
-.experience_content,
-.certificate_content {
+.education_content {
     display: flex;
 }
 
-.education_time,
-.experience_time,
-.certificate_item {
+
+.education_time {
     padding-right: 1rem;
 }
 
-.education_rounder,
-.experience_rounder {
+.education_rounder {
     position: relative;
     display: block;
     width: 16px;
@@ -509,8 +672,7 @@ img {
     margin-top: .25rem;
 }
 
-.education_line,
-.experience_line {
+.education_line {
     display: block;
     width: 2px;
     height: 115%;
@@ -518,34 +680,31 @@ img {
     transform: translate(7px, 0);
 }
 
-.education_data,
-.experience_data,
-.certificate_data {
+.education_data {
     gap: .35rem;
 }
 
-.education_title,
-.experience_title,
-.certificate_year {
+
+
+.education_title {
     font-size: var(--h3-font-size);
 }
 
-.education_studies,
-.experience_company,
-.certificate_title {
+.education_studies {
     font-size: var(--small-font-size);
-    color: var(--title-color);
-}
-
-.education_year,
-.experience_year {
-    font-size: var(--smaller-font-size);
-}
-
-.experience_description {
     color: var(--text-color-light);
+    text-align: left;
+    /* padding-top: 10px; */
+}
+
+
+
+
+
+.education_year {
     font-size: var(--smaller-font-size);
 }
+
 
 /* Skills */
 
@@ -577,27 +736,6 @@ img {
     display: block;
     height: 10px;
     border-radius: 6px;
-}
-
-/* Certificates */
-
-.certificate_container {
-    gap: 0.75rem;
-}
-
-.certificate_rounder {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: var(--text-color-light);
-    border-radius: 50%;
-    margin-right: 0.38rem;
-    margin-left: 0.37rem;
-}
-
-.certificate_honours {
-    font-size: var(--smaller-font-size);
-    color: var(--text-color);
 }
 
 /* Languages */
@@ -635,6 +773,13 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.3em;
+}
+
+.custom_icon {
+    filter: grayscale(1);
+    width: 20px;
+    height: 20px;
 }
 
 .interests_icon {
@@ -688,7 +833,7 @@ img {
         margin-right: auto;
     }
 
-    .l-header,
+    .menu_header,
     .scrolltop {
         display: none;
     }
@@ -705,7 +850,7 @@ img {
     }
 
     .resume_left,
-    .resume_right {
+    .right_side_main {
         padding: 0 1.5rem;
     }
 
