@@ -153,7 +153,7 @@ function generateResume() {
         // html2pdf.js options
         let opt = {
             margin: 0,
-            filename: 'myResumeCV-dark.pdf',
+            filename: 'IsaacRileyCVDark.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 4, useCORS: true },
             jsPDF: { format: 'a4', orientation: 'portrait' }
@@ -163,7 +163,7 @@ function generateResume() {
         // html2pdf.js options
         let opt = {
             margin: 0,
-            filename: 'myResumeCV-light.pdf',
+            filename: 'IsaacRileyCV.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 4, useCORS: true },
             jsPDF: { format: 'a4', orientation: 'portrait' }

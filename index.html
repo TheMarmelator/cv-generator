@@ -32,7 +32,7 @@
 <body>
     <header class="menu_header" id="header">
         <!-- Nav menu -->
-        <nav class="nav bd-container">
+        <nav class="nav nav_container">
             <a href="#" class="nav_logo">Isaac RILEY</a>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
@@ -94,16 +94,16 @@
         </nav>
     </header>
 
-    <main class="main_area bd-container">
+    <main class="main_area">
         <!-- Resume CV -->
         <div class="resume" id="area-cv">
             <div class="resume_left">
 
                 <!-- HOME -->
                 <section class="home" id="home">
-                    <div class="home_container section bd-grid">
+                    <div class="home_container section">
 
-                        <div class="home_data bd-grid">
+                        <div class="home_data">
                             <img src="assets/pictures/profile-black.jpg" alt="Icon picture" class="home_img"
                                 id="home-img">
                             <!--<img alt="Icon picture" class="home_img" id="home-img">-->
@@ -114,7 +114,7 @@
                             </div>
                         </div>
 
-                        <div class="home_address bd-grid">
+                        <div class="home_address">
                             <span class="home_information">
                                 <a href="https://www.openstreetmap.org/#map=11/49.3540/8.6998" class="home_link">
                                     <i class="fa-solid fa-location-dot home_icon"></i> Rhein-Neckar Region
@@ -357,7 +357,7 @@
                 <section class="experience section" id="experience">
                     <h2 class="section-title">Experience</h2>
 
-                    <div class="experience_container bd-grid">
+                    <div class="experience_container">
                         <div class="experience_content">
                             <div class="experience_data">
                                 <div class="experience_heading">
@@ -478,50 +478,60 @@
                     </div>
                 </section>
 
-                <!-- EDUCATION
-                    <section class="education section" id="education">
-                        <h2 class="section-title">Education</h2>
+                <!-- OPEN SOURCE PROJECTS / CONTRIBUTIONS -->
+                <section class="projects section" id="projectss">
+                    <h2 class="section-title">OPEN SOURCE PROJECTS</h2>
 
-                        <div class="education_container bd-grid">
-                            <div class="education_content">
-                                <div class="education_time">
-                                    <span class="education_rounder"></span>
-                                    <span class="education_line"></span>
-                                </div>
-                                <div class="education_data bd-grid">
-                                    <h3 class="education_title">Masters in Computer Science</h3>
-                                    <span class="education_studies">Université Le Havre Normandie - France</span>
-                                    <span class="education_year">2021 - 2023</span>
-                                </div>
-                            </div>
-                            <div class="education_content">
-                                <div class="education_time">
-                                    <span class="education_rounder"></span>
-                                    <span class="education_line"></span>
-                                </div>
-                                <div class="education_data bd-grid">
-                                    <h3 class="education_title">Bachelor in Computer Science</h3>
-                                    <span class="education_studies">Université Le Havre Normandie - France</span>
-                                    <span class="education_year">2018 - 2021</span>
-                                </div>
-                            </div>
-                            <div class="education_content">
-                                <div class="education_time">
-                                    <span class="education_rounder"></span>
-                                </div>
-                                <div class="education_data bd-grid">
-                                    <h3 class="education_title">High School diploma in Sciences, speciality Mathematics</h3>
-                                    <span class="education_studies">Lycée Guillaume Le Conquérant - France</span>
-                                    <span class="education_year">2015 - 2018</span>
-                                </div>
+                    <div class="projects_container">
+                        <div class="projects_content">
+                            <div class="projects_data">
+                                <i class="fa-brands fa-github projects_icon"></i>
+                                <a class="projects_title" href="https://github.com/yelircaasi/nbcat">nbcat</a>
+                                <span class="project_description"> - cat command for Jupyter notebooks, written in Go</span>
                             </div>
                         </div>
-                    </section>  -->
+                        <div class="projects_content">
+                            <div class="projects_data">
+                                <i class="fa-brands fa-github projects_icon"></i>
+                                <a class="projects_title" href="https://github.com/yelircaasi/datethyme">datethyme</a>
+                                <span class="project_description"> - ergonomic datetime types built on Pydantic, emphasizing parsing and arithmetic</span>
+                            </div>
+                        </div>
+                        <div class="projects_content">
+                            <div class="projects_data">
+                                <i class="fa-brands fa-github projects_icon"></i>
+                                <a class="projects_title" href="https://github.com/yelircaasi/apiarium">apiarium</a>
+                                <span class="project_description"> - Python toolkit for API + interfaces: write once, run app as CLI, TUI, REPL, and via the Matrix protocol</span>
+                            </div>
+                        </div>
+                        <!-- <div class="projects_content">
+                            <div class="projects_data">
+                                <i class="fa-brands fa-github projects_icon"></i>
+                                <a class="projects_title" href="https://github.com/yelircaasi/nix-config">nix-config</a>
+                                <span class="project_description"> - Nix declaration for both NixOS and Nix on non-NixOS</span>
+                            </div>
+                        </div>
+                        <div class="projects_content">
+                            <div class="projects_data">
+                                <i class="fa-brands fa-github projects_icon"></i>
+                                <a class="projects_title" href="https://github.com/yelircaasi/nix-config">nix-config</a>
+                                <span class="project_description"> - Nix declaration for both NixOS and Nix on non-NixOS</span>
+                            </div>
+                        </div>
+                        <div class="projects_content">
+                            <div class="projects_data">
+                                <i class="fa-brands fa-github projects_icon"></i>
+                                <a class="projects_title" href="https://github.com/yelircaasi/nix-config">nix-config</a>
+                                <span class="project_description"> - Nix declaration for both NixOS and Nix on non-NixOS</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
 
                 <!-- INTERESTS -->
                 <section class="interests section" id="interests">
                     <h2 class="section-title">Interests</h2>
-                    <div class="interests_container bd-grid">
+                    <div class="interests_container">
                         <div class="interests_content">
                             <i class="fa fa-linux interests_icon"></i>
                             <span class="interests_name">Linux</span>
@@ -543,6 +553,19 @@
                             <span class="interests_name">Programming</span>
                         </div> -->
                         <div class="interests_content">
+                            <img src="assets/icons/python.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">Python</span>
+                        </div>
+                        <div class="interests_content">
+                            <img src="assets/icons/gopher.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">Go</span>
+                        </div>
+                        <div class="interests_content">
+                            <!-- <i class="fa-brands fa-pytorch interests_icon"></i> -->
+                            <img src="assets/icons/pytorch-logo-flame.svg" alt="Icon picture" class="custom_icon">
+                            <span class="interests_name">Pytorch</span>
+                        </div>
+                        <div class="interests_content">
                             <img src="assets/icons/tensorflow.svg" alt="Icon picture" class="custom_icon">
                             <span class="interests_name">TensorFlow</span>
                         </div>
@@ -558,15 +581,8 @@
                             <img src="assets/icons/rust-white.svg" alt="Icon picture" class="custom_icon">
                             <span class="interests_name">Rust</span>
                         </div>
-                        <div class="interests_content">
-                            <img src="assets/icons/python.svg" alt="Icon picture" class="custom_icon">
-                            <span class="interests_name">Python</span>
-                        </div>
-                        <div class="interests_content">
-                            <!-- <i class="fa-brands fa-pytorch interests_icon"></i> -->
-                            <img src="assets/icons/pytorch-logo-flame.svg" alt="Icon picture" class="custom_icon">
-                            <span class="interests_name">Pytorch</span>
-                        </div>
+                        
+                        
                     </div>
                 </section>
 
