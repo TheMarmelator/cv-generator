@@ -10,6 +10,7 @@
     --text-color-bright: #323232;
     --text-color: #403A3A;
     --text-color-light: #707070;
+    --text-color-lighter: #999999;
     --container-color: #FAFAFA;
     --container-color-alt: #F0EFEF;
     --body-color: #FCFCFC;
@@ -75,6 +76,7 @@ body.dark-theme {
     --text-color-bright: #D0D0D0;
     --text-color: #BFBFBF;
     --text-color-light: #A0A0A0;
+    --text-color-lighter: #666666;
     --container-color: #212121;
     --container-color-alt: #181616;
     --body-color: #2B2B2B;
@@ -400,22 +402,29 @@ body.scale-cv {
     height: 4px;
 }
 
+
 .skills_content {
-    gap: 0.25rem;
+    gap: 0.2rem;
+    padding-left: 2rem;
 }
 
-.skills_box {
-    width: 80px;
-    height: 8px;
-    border-radius: 4px;
+.skills_line {
+    margin-bottom: .25rem;
+    justify-content: space-evenly;
 }
-.skills_box {
+
+.skills_text {
     display: inline-block;
-    width: 150px;
+    width: 35%;
+}
+
+.skills_progress_container {
+    display: inline-block;
+    width: 60%;
     height: 10px;
     border-radius: 6px;
     overflow: hidden;
-    background-color: var(--text-color-light);
+    background-color: var(--text-color-lighter);
 }
 
 .skills_progress {
@@ -423,59 +432,55 @@ body.scale-cv {
     display: block;
     height: 10px;
     border-radius: 6px;
-    width: 150px;
+    /* width: 150px; */
     transform: translate(0.01px, 0);
 }
-
-.skills_content {
-    gap: 0.2rem;
-    padding-left: 2rem;
-}
-
-.skills_name {
-    margin-bottom: .25rem;
-    justify-content: space-evenly;
-}
-
-.skills_text {
-    display: inline-block;
-    width: 100px;
-}
-
-
-
 
 
 /* ============================= LANGUAGES =============================  */
 
 .languages_content {
-    gap: 0.25rem;
-}
-
-.languages_text {
-    width: 115px;
-}
-
-.languages_content {
     gap: 0.2rem;
     padding-left: 2rem;
 }
 
-.languages_name {
+.languages_line {
     margin-bottom: .25rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.languages_text_container {
+    display: inline-block;
+    width: 40%;
 }
 
 .languages_text {
     display: inline-block;
-    width: 100px;
+    /* width: 30%; */
+}
+
+.languages_stars_container {
+    /* position: initial; */
+    display: inline-block;
+    /* text-align: left; */
+    color: var(--text-color-bright);
+    /* width: 50%; */
+    overflow: hidden;
 }
 
 .languages_stars {
-    position: initial;
+    /* position: initial; */
+    display: inline-block;
+    /* text-align: left; */
+    color: var(--text-color-bright);
+    /* overflow: hidden; */
 }
 
 .languages_stars_checked {
-    color: var(--text-color-light);
+    display: inline-block;
+    color: var(--text-color-lighter);
+    /* overflow: hidden; */
 }
 
 /* ============================= Body ============================= */
