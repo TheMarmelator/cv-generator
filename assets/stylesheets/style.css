@@ -1,5 +1,5 @@
-/* Google Font Montserrat (alternatives: Pop pins, La to, Mont serrat, Nun ito, Quick sand, Rale way, Rob oto) */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* Google Font Nunito (alternatives: Pop pins, La to, Mont serrat, Nun ito, Quick sand, Rale way, Rob oto) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 /* Variables */
 :root {
@@ -16,7 +16,7 @@
     --body-color: #FCFCFC;
 
     /* Typography */
-    --body-font: 'Montserrat', sans-serif;
+    --body-font: 'Nunito', sans-serif;
 
     /* Fonts size */
     --h1-font-size: 1.5rem;
@@ -41,8 +41,6 @@
     --z-fixed: 100;
 }
 
-/* Base */
-
 *,
 ::before,
 ::after {
@@ -53,7 +51,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Button Light/Dark */
+/* Light/Dark Switcher */
 
 .change-theme {
     position: absolute;
@@ -91,6 +89,46 @@ body.scale-cv {
     --smaller-font-size: 0.688rem;
 }
 
+/* ============================= ELEMENTS ============================= */
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Generate PDF Button */
 
 .generate-pdf {
@@ -105,51 +143,6 @@ body.scale-cv {
 
 .generate-pdf:hover {
     color: var(--title-color);
-}
-
-/* Scale CV */
-
-.main_area {
-    width: 840;
-    height: 1188;
-}
-
-
-
-/* PDF A4 */
-
-.scale-cv .change-theme,
-.scale-cv .generate-pdf {
-    display: none;
-}
-
-/* .scale-cv .nav_container {
-    max-width: 795px;
-} */
-
-.scale-cv .section {
-    padding: 1.0rem 0 0.80rem;
-}
-
-.scale-cv .section-title {
-    margin-bottom: 0.55rem;
-}
-
-.scale-cv .resume {
-    /* height: 1122px; */
-    height: 1188px;
-    width: 840px;
-}
-
-.scale-cv .resume_left {
-    /* width: 250px; */
-    width: 280px;
-    padding: 0 1.25rem;
-}
-
-.scale-cv .right_side_main {
-    padding: 0 1rem 0 1.25rem;
-    width: 560px;
 }
 
 /* ============================= EXPERIENCE =============================  */
@@ -234,7 +227,7 @@ body.scale-cv {
     display: grid;
     width: 100%;
     gap: 1.5rem;
-    
+
 }
 
 .certificate_data {
@@ -242,7 +235,7 @@ body.scale-cv {
     justify-content: left;
     align-items: center;
     width: 100%;
-    
+
 }
 
 .certificate_content {
@@ -473,7 +466,7 @@ body.scale-cv {
 
 
 
-/* ============================= Interests ============================= */
+/* ============================= INTERESTS ============================= */
 
 .interests_container {
     grid-template-columns: repeat(3, 1fr);
@@ -498,83 +491,7 @@ body.scale-cv {
     color: var(--text-color-light);
 }
 
-/* ============================= Body ============================= */
-
-body {
-    margin: 0 0 var(--header-height) 0;
-    padding: 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-}
-
-h1,
-h2,
-h3,
-ul,
-p {
-    margin: 0;
-}
-
-h1,
-h2,
-h3 {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* ============================= Class CSS ============================= */
-
-.section {
-    padding: 1.0rem 0;
-}
-
-.section-title {
-    font-size: var(--h2-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
-    text-transform: uppercase;
-    letter-spacing: .35rem;
-    text-align: center;
-    margin-bottom: var(--margin-3);
-}
-
-/* Layout */
-
-.main_area {
-    /* max-width: 968px; */
-    max-width: 1068px;
-    width: calc(100% - 3rem);
-    margin-left: var(--margin-3);
-    margin-right: var(--margin-3);
-}
-
-
-
-.experience_container {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.interests_container {
-    display: grid;
-    gap: 1.5rem;
-}
+/* ============================= HOME ============================= */
 
 .home_container {
     display: grid;
@@ -589,91 +506,6 @@ img {
 .home_address {
     display: grid;
     gap: 1.5rem;
-}
-
-.menu_header {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background-color: var(--body-color);
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
-}
-
-/* Nav */
-
-.nav {
-    height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media screen and (max-width: 968px) {
-    .nav_menu {
-        position: fixed;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        padding: 2rem 1.5rem;
-        background-color: var(--body-color);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 1rem 1rem 0 0;
-        z-index: var(--z-fixed);
-        transition: all 0.5s ease;
-    }
-}
-
-.nav_logo,
-.nav_toggle {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-}
-
-.nav_toggle {
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.nav_list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.nav_item {
-    text-align: center;
-}
-
-.nav_link {
-    display: flex;
-    flex-direction: column;
-    font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
-    font-weight: var(--font-medium);
-}
-
-.nav_link:hover {
-    color: var(--title-color);
-}
-
-.nav_icon {
-    font-size: 1.2rem;
-    margin-bottom: var(--margin-1);
-}
-
-/* Show menu */
-
-.show-menu {
-    bottom: var(--header-height);
-}
-
-/* Active menu link */
-
-.active-link {
-    color: var(--title-color);
 }
 
 /* Home page */
@@ -753,43 +585,58 @@ img {
     color: var(--container-color);
 }
 
-.scrolltop {
+/* ============================= Class CSS ============================= */
+
+.main_area {
+    width: 840;
+    height: 1188;
+}
+
+.section {
+    padding: 1.0rem 0;
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    text-align: center;
+    margin-bottom: var(--margin-3);
+}
+
+.main_area {
+    max-width: 840px;
+    width: calc(100% - 3rem);
+    margin-left: var(--margin-3);
+    margin-right: var(--margin-3);
+}
+
+.experience_container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.interests_container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.menu_header {
+    width: 100%;
     position: fixed;
-    right: 1.2rem;
-    bottom: -20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.4rem;
-    background-color: var(--container-color-alt);
-    border-radius: 0.25rem;
-    z-index: var(--z-tooltip);
-    transition: 0.4s;
-    visibility: hidden;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
 }
-
-.scrolltop_icon {
-    font-size: 1.2rem;
-    color: var(--text-color);
-}
-
-.show-scroll {
-    visibility: visible;
-    bottom: 5rem;
-}
-
-/* Screen for small phones  */
-
-/* @media screen and (max-width: 320px) {
-    .nav_list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem 0.5rem;
-    }
-} */
 
 /* Computer screen -> PDF */
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 500px) {
     body {
         margin: 3rem 0;
     }
@@ -871,6 +718,36 @@ img {
 }
 
 /* PDF A4 */
+
+.scale-cv .change-theme,
+.scale-cv .generate-pdf {
+    display: none;
+}
+
+.scale-cv .section {
+    padding: 1.0rem 0 0.80rem;
+}
+
+.scale-cv .section-title {
+    margin-bottom: 0.55rem;
+}
+
+.scale-cv .resume {
+    /* height: 1122px; */
+    height: 1188px;
+    width: 840px;
+}
+
+.scale-cv .resume_left {
+    /* width: 250px; */
+    width: 280px;
+    padding: 0 1.25rem;
+}
+
+.scale-cv .right_side_main {
+    padding: 0 1rem 0 1.25rem;
+    width: 560px;
+}
 
 .scale-cv .change-theme,
 .scale-cv .generate-pdf {

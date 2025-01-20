@@ -1,5 +1,5 @@
-/* Google Font Montserrat (alternatives: Pop pins, La to, Mont serrat, Nun ito, Quick sand, Rale way, Rob oto) */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* Google Font Nunito (alternatives: Pop pins, La to, Mont serrat, Nun ito, Quick sand, Rale way, Rob oto) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 /* Variables */
 :root {
@@ -16,7 +16,7 @@
     --body-color: #FCFCFC;
 
     /* Typography */
-    --body-font: 'Montserrat', sans-serif;
+    --body-font: 'Nunito', sans-serif;
 
     /* Fonts size */
     --h1-font-size: 1.5rem;
