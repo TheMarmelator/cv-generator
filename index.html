@@ -41,7 +41,6 @@
                         <div class="home_data">
                             <img src="assets/pictures/profile-black.jpg" alt="Icon picture" class="home_img"
                                 id="home-img">
-                            <!--<img alt="Icon picture" class="home_img" id="home-img">-->
                             <h1 class="home_title">ISAAC <b>RILEY</b></h1>
                             <h3 class="home_profession">Machine Learning Engineer</h3>
                             <div>
@@ -69,10 +68,9 @@
                         </div>
                     </div>
 
-                    <!-- Theme change button -->
+                    <!-- 3 BUTTONS FOR HTML ONLY -->
                     <i class="fa-solid fa-moon change-theme" title="Theme" id="theme-button"></i>
-
-                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="fa-solid fa-language change-language" title="Language" id="language-button"></i>
                     <i class="fa-solid fa-download generate-pdf" title="Generate PDF" id="resume-button"></i>
 
                 </section>
@@ -121,54 +119,63 @@
                                     <span class="skills_progress" style="width: 100%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">PyTorch</span>
                                 <div class="skills_progress_container">
                                     <span class="skills_progress" style="width: 100%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">TensorFlow</span>
                                 <div class="skills_progress_container">
                                     <span class="skills_progress" style="width: 100%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">Nix/NixOS</span>
                                 <div class="skills_progress_container">
                                     <span class="skills_progress" style="width: 90%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">Git</span>
                                 <div class="skills_progress_container">
                                     <span class="skills_progress" style="width: 90%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">Julia</span>
                                 <div class="skills_progress_container">
                                     <span class="skills_progress" style="width: 85%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">HTML+CSS</span>
                                 <div class="skills_progress_container">
                                     <span class="skills_progress" style="width: 85%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">TypeScript</span>
                                 <div class="skills_progress_container">
                                     <span class="skills_progress" style="width: 80%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">Haskell</span>
                                 <div class="skills_progress_container">
                                     <span class="skills_progress" style="width: 70%;"></span>
                                 </div>
                             </div>
+
                             <div class="skills_line">
                                 <span class="skills_text">Rust</span>
                                 <div class="skills_progress_container">
@@ -182,7 +189,7 @@
 
                 <!-- LANGUAGES -->
                 <section class="languages section" id="languages">
-                    <h2 class="section-title">Languages</h2>
+                    <h2 class="section-title" data-i18n="languages"></h2>
 
                     <div class="languages_container">
                         <ul class="languages_content">
@@ -273,14 +280,12 @@
                         </ul>
                     </div>
                 </section>
-
             </div>
-
             <div class="right_side_main">
 
                 <!-- EXPERIENCE -->
                 <section class="experience section" id="experience">
-                    <h2 class="section-title">Experience</h2>
+                    <h2 class="section-title" data-i18n="experience"></h2>
 
                     <div class="experience_container">
                         <div class="experience_content">
@@ -354,7 +359,7 @@
 
                 <!-- CERTIFICATES -->
                 <section class="certificate section" id="certificates">
-                    <h2 class="section-title">Certificates</h2>
+                    <h2 class="section-title" data-i18n="certificates"></h2>
 
                     <div class="certificate_container">
                         <div class="certificate_content">
@@ -383,8 +388,8 @@
                 </section>
 
                 <!-- OPEN SOURCE PROJECTS / CONTRIBUTIONS -->
-                <section class="projects section" id="projectss">
-                    <h2 class="section-title">OPEN SOURCE PROJECTS</h2>
+                <section class="projects section" id="projects">
+                    <h2 class="section-title" data-i18n="os_projects"></h2>
 
                     <div class="projects_container">
                         <div class="projects_content">
@@ -434,7 +439,7 @@
 
                 <!-- INTERESTS -->
                 <section class="interests section" id="interests">
-                    <h2 class="section-title">Interests</h2>
+                    <h2 class="section-title" data-i18n="interests"></h2>
                     <div class="interests_container">
                         <div class="interests_content">
                             <i class="fa fa-linux interests_icon"></i>
@@ -444,49 +449,38 @@
                             <img src="assets/icons/nix-snowflake-colours.svg" alt="Icon picture" class="custom_icon">
                             <span class="interests_name">NixOS</span>
                         </div>
-                        <!-- <div class="interests_content">
-                            <i class="fa-solid fa-futbol interests_icon"></i>
-                            <span class="interests_name">Football</span>
-                        </div> -->
-                        <!-- <div class="interests_content">
-                            <i class="fa-solid fa-leaf interests_icon"></i>
-                            <span class="interests_name">Nature</span>
-                        </div> -->
-                        <!-- <div class="interests_content">
-                            <i class="fa-solid fa-code interests_icon"></i>
-                            <span class="interests_name">Programming</span>
-                        </div> -->
                         <div class="interests_content">
-                            <img src="assets/icons/python.svg" alt="Icon picture" class="custom_icon">
+                            <img src="assets/icons/python.svg" alt="Python programming language icon"
+                                class="custom_icon">
                             <span class="interests_name">Python</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/gopher.svg" alt="Icon picture" class="custom_icon">
+                            <img src="assets/icons/gopher.svg" alt="Go programming language icon" class="custom_icon">
                             <span class="interests_name">Go</span>
                         </div>
                         <div class="interests_content">
                             <!-- <i class="fa-brands fa-pytorch interests_icon"></i> -->
-                            <img src="assets/icons/pytorch-logo-flame.svg" alt="Icon picture" class="custom_icon">
+                            <img src="assets/icons/pytorch-logo-flame.svg" alt="Pytorch icon" class="custom_icon">
                             <span class="interests_name">Pytorch</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/tensorflow.svg" alt="Icon picture" class="custom_icon">
+                            <img src="assets/icons/tensorflow.svg" alt="TensorFlow icon" class="custom_icon">
                             <span class="interests_name">TensorFlow</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/julia-dots.svg" alt="Icon picture" class="custom_icon">
+                            <img src="assets/icons/julia-dots.svg" alt="Julia programming language icon"
+                                class="custom_icon">
                             <span class="interests_name">Julia</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/haskell.svg" alt="Icon picture" class="custom_icon">
+                            <img src="assets/icons/haskell.svg" alt="Haskell icon" class="custom_icon">
                             <span class="interests_name">Haskell</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/rust-white.svg" alt="Icon picture" class="custom_icon">
+                            <img src="assets/icons/rust-white.svg" alt="Rust programming language icon"
+                                class="custom_icon">
                             <span class="interests_name">Rust</span>
                         </div>
-
-
                     </div>
                 </section>
 
@@ -494,16 +488,8 @@
         </div>
     </main>
 
-
-
-    <!-- HTML2PDF.js -->
-    <!-- Version 0.9.3 -->
     <script src="assets/javascripts/html2pdf.v0.9.3.bundle.min.js"></script>
-    <!-- <script src="assets/javascripts/html2pdf.v0.10.2.bundle.min.js"></script> -->
-
-    <!-- Main Javascript file -->
     <script src="assets/javascripts/main.js"></script>
-    <script src="assets/javascripts/interpolate.js"></script>
 </body>
 
 </html>

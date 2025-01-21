@@ -53,6 +53,16 @@ html {
 
 /* Light/Dark Switcher */
 
+.change-language {
+    position: absolute;
+    right: 0;
+    top: 3.5rem;
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .change-theme {
     position: absolute;
     right: 0;
@@ -63,6 +73,7 @@ html {
     cursor: pointer;
 }
 
+.change-language:hover,
 .change-theme:hover {
     color: var(--title-color);
 }
@@ -315,22 +326,10 @@ img {
 
 /* ============================= SOCIALS =============================  */
 
-
-/* Social page */
-
 .social_container {
-    /* grid-template-columns: max-content;
-    gap: 1rem; */
     display: flex;
-    /* Use flexbox for horizontal layout */
     justify-content: space-evenly;
-    /* Center the icons */
-    /* gap: 5px; */
-    /* Space between icons */
     align-items: center;
-    /* Align icons vertically */
-    /* flex-wrap: wrap; */
-    /* Wrap icons if there's not enough space */
     padding: 5px;
 }
 
@@ -378,11 +377,10 @@ img {
 
 .profile_description {
     text-align: center;
-    /* font-size: var(--small-font-size); */
+    font-size: var(--small-font-size);
 }
 
 /* ============================= SKILLS =============================  */
-
 
 .skills_content {
     gap: 0.2rem;
@@ -719,6 +717,8 @@ img {
 
 /* PDF A4 */
 
+
+.scale-cv .change-language,
 .scale-cv .change-theme,
 .scale-cv .generate-pdf {
     display: none;
@@ -749,6 +749,7 @@ img {
     width: 520px;
 }
 
+.scale-cv .change-language,
 .scale-cv .change-theme,
 .scale-cv .generate-pdf {
     display: none;
