@@ -170,7 +170,7 @@ img {
     width: 100%;
     padding-bottom: 0px;
     padding-left: 0px;
-    padding-right: 0.5rem;
+    padding-right: 1.0rem;
 }
 
 .experience_title {
@@ -179,7 +179,7 @@ img {
 
 .experience_time {
     font-size: var(--larger-font-size);
-    /* padding-right: 0.5rem; */
+    /* padding-right: .5rem; */
 }
 
 /* -----------------  ----------------- */
@@ -189,7 +189,7 @@ img {
     width: 100%;
     padding-bottom: 0px;
     padding-left: 0px;
-    padding-right: 0.5rem;
+    padding-right: 1.0rem;
 }
 
 .experience_company {
@@ -359,7 +359,7 @@ img {
 .social_handle_container {
     width: 100%;
     align-items: center;
-    padding-left: 1.2em;
+    padding-left: 0.5em;
 }
 
 .social_handle {
@@ -644,7 +644,7 @@ img {
     .main_area {
         margin-left: auto;
         margin-right: auto;
-        max-width: 840px;
+        max-width: 800px;
     }
 
     .menu_header,
@@ -673,7 +673,7 @@ img {
     .right_side_main {
         padding-top: 0;
         padding-left: 1.0rem;
-        padding-right: 1.0rem;
+        padding-right: 1.5rem;
     }
 
     .generate-pdf {
@@ -746,7 +746,7 @@ img {
 
 .scale-cv .right_side_main {
     padding: 0 1rem 0 1.25rem;
-    width: 560px;
+    width: 520px;
 }
 
 .scale-cv .change-theme,
@@ -784,7 +784,7 @@ img {
 .scale-cv .right_side_main {
     /* padding-top: 0.5rem; */
     padding-bottom: 0.0rem;
-    padding-right: 1.0rem;
+    padding-right: 1.5rem;
     padding-left: 1.0rem;
     width: 520px;
 }

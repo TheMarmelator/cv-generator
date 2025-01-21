@@ -52,7 +52,8 @@
                         <div class="home_address">
                             <span class="home_information">
                                 <a href="https://www.openstreetmap.org/#map=11/49.3540/8.6998" class="home_link">
-                                    <i class="fa-solid fa-location-dot home_icon"></i> Rhein-Neckar Region
+                                    <i class="fa-solid fa-location-dot home_icon"></i> <span
+                                        data-i18n="location"></span>
                                 </a>
                             </span>
                             <span class="home_information">
@@ -76,14 +77,17 @@
 
                 </section>
 
+                <!-- PROFILE -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title" data-i18n="profile"></h2>
+
+                    <p class="profile_description" data-i18n="bio"></p>
+                </section>
+
                 <!-- SOCIAL -->
                 <section class="social section">
-                    <!-- <div class="social_header"></div> -->
-                    <!-- <h2 class="section-title">Social</h2> -->
-                    <!-- <span class="social_name">@yelircaasi</span> -->
-                    <!-- </div> -->
                     <div class="social_name">
-                        <h2 class="section-title">Socials</h2>
+                        <h2 class="section-title" data-i18n="socials"></h2>
                         <div class="social_handle_container">
                             <a class="social_handle">@yelircaasi</a>
                         </div>
@@ -105,23 +109,9 @@
                     </div>
                 </section>
 
-                <!-- PROFILE -->
-                <section class="profile section" id="profile">
-                    <h2 class="section-title">Profile</h2>
-
-                    <p class="profile_description">
-                        Deep expertise in Python, machine learning, and Nix, complemented by proficiency in a wide array
-                        of other languages and tools.
-                        Committed to clean, maintainable software design emphasizing scalability, clarity, and
-                        robustness.
-                        Firm believer in the power of static type-checking (mypy), data models and validation
-                        (pydantic), thorough testing (pytest), and pre-commit hooks (lefthook).
-                    </p>
-                </section>
-
                 <!-- SKILLS  -->
                 <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
+                    <h2 class="section-title" data-i18n="skills"></h2>
                     <div class="skills_container">
                         <div class="skills_content">
 
@@ -198,7 +188,7 @@
                         <ul class="languages_content">
                             <div class="languages_line">
                                 <div class="languages_text_container">
-                                    <span class="languages_text">English</span>
+                                    <span class="languages_text" data-i18n="EN"></span>
                                 </div>
                                 <div class="languages_stars_container">
                                     <span class="languages_stars">
@@ -212,7 +202,7 @@
                             </div>
                             <div class="languages_line">
                                 <div class="languages_text_container">
-                                    <span class="languages_text">German</span>
+                                    <span class="languages_text" data-i18n="DE"></span>
                                 </div>
                                 <div class="languages_stars_container">
                                     <span class="languages_stars">
@@ -226,21 +216,7 @@
                             </div>
                             <div class="languages_line">
                                 <div class="languages_text_container">
-                                    <span class="languages_text">Russian</span>
-                                </div>
-                                <div class="languages_stars_container">
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star languages_stars_checked"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="languages_line">
-                                <div class="languages_text_container">
-                                    <span class="languages_text">French</span>
+                                    <span class="languages_text" data-i18n="RU"></span>
                                 </div>
                                 <div class="languages_stars_container">
                                     <span class="languages_stars">
@@ -254,7 +230,21 @@
                             </div>
                             <div class="languages_line">
                                 <div class="languages_text_container">
-                                    <span class="languages_text">Ukrainian</span>
+                                    <span class="languages_text" data-i18n="FR"></span>
+                                </div>
+                                <div class="languages_stars_container">
+                                    <span class="languages_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star languages_stars_checked"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="languages_line">
+                                <div class="languages_text_container">
+                                    <span class="languages_text" data-i18n="UK"></span>
                                 </div>
                                 <div class="languages_stars_container">
                                     <span class="languages_stars">
@@ -268,7 +258,7 @@
                             </div>
                             <div class="languages_line">
                                 <div class="languages_text_container">
-                                    <span class="languages_text">Spanish</span>
+                                    <span class="languages_text" data-i18n="ES"></span>
                                 </div>
                                 <div class="languages_stars_container">
                                     <span class="languages_stars">
@@ -297,60 +287,44 @@
                             <div class="experience_data">
                                 <div class="experience_heading">
                                     <h3 class="experience_title">RESEARCH ENGINEER</h3>
-                                    <span class="experience_time">October 2021 - present</span>
+                                    <span class="experience_time" data-i18n="knecon_time"></span>
                                 </div>
 
                                 <div class="experience_info">
                                     <span class="experience_company">knecon Technologie GmbH</span>
                                     <div>
                                         <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
-                                        <span class="experience_location">Mannheim, Germany</span>
+                                        <span class="experience_location" data-i18n="mannheim"></span>
                                     </div>
                                 </div>
 
-                                <p class="experience_description">
-                                    Helped develop an LLM-based document analysis platform with retrieval-augmented
-                                    generation and integration of external data sources.
-                                </p>
-                                <p class="experience_description">
-                                    Used AzureML, MLFlow, Gitlab CI/CD and Kubernetes for development and deployment of
-                                    machine learning pipelines.
-                                </p>
-                                <p class="experience_description">
-                                    Designed, trained, and deployed the NLU-/NER-based interface for an integrated
-                                    desktop search tool.
-                                </p>
-                                <p class="experience_description">
-                                    Developed a face redaction service using dlib, C++, and Python.
-                                </p>
-                                <p class="experience_description">
-                                    Created and maintained numerous utility packages and infrastructural tools for
-                                    internal use.
-                                </p>
+                                <p class="experience_description" data-i18n="knecon_1"></p>
+                                <p class="experience_description" data-i18n="knecon_2"></p>
+                                <p class="experience_description" data-i18n="knecon_3"></p>
+                                <p class="experience_description" data-i18n="knecon_4"></p>
+                                <p class="experience_description" data-i18n="knecon_5"></p>
                             </div>
                         </div>
                         <div class="experience_content">
                             <div class="experience_data">
                                 <div class="experience_heading">
                                     <h3 class="experience_title">DATA SCIENTIST</h3>
-                                    <span class="experience_time">April 2021 - June 2021</span>
+                                    <span class="experience_time" data-i18n="bpt_time"></span>
                                 </div>
 
                                 <div class="experience_info">
-                                    <span class="experience_company">Backpackertrail (internship)</span>
+                                    <span class="experience_company" data-i18n="backpackertrail"></span>
                                     <div>
                                         <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
-                                        <span class="experience_location">Heidelberg, Germany</span>
+                                        <span class="experience_location" data-i18n="heidelberg"></span>
                                     </div>
                                 </div>
 
-                                <p class="experience_description">
-                                    Developed a reverse image search system for travel recommendations, built with
-                                    TensorFlow. laid the foundations
-                                    for a trip-planning tool built with ORTools.
+                                <p class="experience_description" data-i18n="bpt_1">
+
                                 </p>
-                                <p class="experience_description">
-                                    Developed an automatic route-planning tool built with ORTools.
+                                <p class="experience_description" data-i18n="bpt_2">
+
                                 </p>
                             </div>
                         </div>
@@ -360,24 +334,19 @@
                             </div>
                             <div class="experience_data">
                                 <div class="experience_heading">
-                                    <h3 class="experience_title">RESEARCH ASSISTANT</h3>
-                                    <span class="experience_time">July 2015 - May 2019</span>
+                                    <h3 class="experience_title" data-i18n="research_assistant"></h3>
+                                    <span class="experience_time" data-i18n="ra_time"></span>
                                 </div>
                                 <div class="experience_info">
-                                    <span class="experience_company">BYU Economics Department</span>
+                                    <span class="experience_company" data-i18n="econ_department"></span>
                                     <div>
                                         <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
-                                        <span class="experience_location">Provo UT, USA</span>
+                                        <span class="experience_location">Provo, UT, USA</span>
                                     </div>
                                 </div>
-                                <p class="experience_description">
-                                    Implemented an XGBoost-driven system for entity matching across historical records
-                                    for historical economics research. Created a pipeline for cleaning and entity
-                                    recognition of patent records.
-                                </p>
-                                <p class="experience_description">
-                                    Published two peer-reviewed academic articles as a co-author.
-                                </p>
+                                <p class="experience_description" data-i18n="ra_1"></p>
+                                <p class="experience_description" data-i18n="ra_2"></p>
+                                <p class="experience_description" data-i18n="ra_3"></p>
                             </div>
                         </div>
                     </div>
@@ -390,22 +359,22 @@
                     <div class="certificate_container">
                         <div class="certificate_content">
                             <div class="certificate_data">
-                                <h3 class="certificate_title">M.Sc. Computational Linguistics</h3>
-                                <span class="certificate_institution">University of Stuttgart</span>
+                                <h3 class="certificate_title" data-i18n="compling"></h3>
+                                <span class="certificate_institution" data-i18n="uni_stuttgart"></span>
 
                             </div>
                             <span class="certificate_year">2021</span>
                         </div>
                         <div class="certificate_content">
                             <div class="certificate_data">
-                                <h3 class="certificate_title">B.S. Economics</h3>
-                                <span class="certificate_institution">Brigham Young University, Provo UT, USA </span>
+                                <h3 class="certificate_title" data-i18n="econ"></h3>
+                                <span class="certificate_institution">Brigham Young University, Provo, UT, USA</span>
                             </div>
                             <span class="certificate_year">2018</span>
                         </div>
                         <div class="certificate_content">
                             <div class="certificate_data">
-                                <h3 class="certificate_title">High School Diploma</h3>
+                                <h3 class="certificate_title" data-i18n="hs_diploma"></h3>
                                 <span class="certificate_institution">James Bowie HS, Austin TX, USA</span>
                             </div>
                             <span class="certificate_year">2011</span>
@@ -422,24 +391,21 @@
                             <div class="projects_data">
                                 <i class="fa-brands fa-github projects_icon"></i>
                                 <a class="projects_title" href="https://github.com/yelircaasi/nbcat">nbcat</a>
-                                <span class="project_description"> - cat command for Jupyter notebooks, written in
-                                    Go</span>
+                                <span class="project_description" data-i18n="nbcat_desc"></span>
                             </div>
                         </div>
                         <div class="projects_content">
                             <div class="projects_data">
                                 <i class="fa-brands fa-github projects_icon"></i>
                                 <a class="projects_title" href="https://github.com/yelircaasi/datethyme">datethyme</a>
-                                <span class="project_description"> - ergonomic datetime types built on Pydantic,
-                                    emphasizing parsing and arithmetic</span>
+                                <span class="project_description" data-i18n="datethyme_desc"></span>
                             </div>
                         </div>
                         <div class="projects_content">
                             <div class="projects_data">
                                 <i class="fa-brands fa-github projects_icon"></i>
                                 <a class="projects_title" href="https://github.com/yelircaasi/apiarium">apiarium</a>
-                                <span class="project_description"> - Python toolkit for API + interfaces: write once,
-                                    run app as CLI, TUI, REPL, and via the Matrix protocol</span>
+                                <span class="project_description" data-i18n="apiarium_desc"></span>
                             </div>
                         </div>
                         <!-- <div class="projects_content">
@@ -533,9 +499,11 @@
     <!-- HTML2PDF.js -->
     <!-- Version 0.9.3 -->
     <script src="assets/javascripts/html2pdf.v0.9.3.bundle.min.js"></script>
+    <!-- <script src="assets/javascripts/html2pdf.v0.10.2.bundle.min.js"></script> -->
 
     <!-- Main Javascript file -->
     <script src="assets/javascripts/main.js"></script>
+    <script src="assets/javascripts/interpolate.js"></script>
 </body>
 
 </html>
