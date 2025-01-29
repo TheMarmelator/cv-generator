@@ -31,7 +31,7 @@
   "location2": "Mühlhausen 69242",
   "mannheim": "Mannheim",
   "nbcat_desc": " - cat-Befehl für Jupyter-Notebooks (auf Go geschrieben)",
-  "profile": "PROFIL",
+  "profile": "ÜBER MICH",
   "os_projects": "OPEN-SOURCE-PROJEKTE",
   "ra_1": "Implementierung eines XGBoost-gestützten Systems für den datensatzübergreifenden Entitätsabgleich im Kontext der wirtschaftshistorischen Forschung.",
   "ra_2": "Erstellung einer Pipeline zur Bereinigung und NER von Patentdatensätzen.",
@@ -40,7 +40,7 @@
   "research_assistant": "FORSCHUNGSASSISTENT",
   "RU": "Russisch",
   "skills": "KOMPETENZEN",
-  "socials": "APPS",
+  "socials": "PROFILE",
   "UK": "Ukrainisch",
   "uni_stuttgart": "Universität Stuttgart"
 }
