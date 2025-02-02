@@ -43,21 +43,21 @@
                                 id="home-img">
                             <h1 class="home_title">ISAAC <b>RILEY</b></h1>
                             <h3 class="home_profession">Machine Learning Engineer</h3>
-                            <div>
-                                <a download="" id="download-button" class="home_button-movil">Download</a>
-                            </div>
+                            <!-- <div>
+                                <a download="" id="download-button">Download</a>
+                            </div> -->
                         </div>
 
                         <div class="home_items">
                             <span class="home_information">
-                                <a href="https://www.openstreetmap.org/#map=11/49.3540/8.6998" class="home_link">
+                                <a class="home_link">
                                     <i class="fa-solid fa-calendar home_icon"></i> <span data-i18n="birthday"></span>
                                 </a>
                             </span>
                             <span class="home_information">
-                                <a href="https://www.openstreetmap.org/#map=11/49.3540/8.6998" class="home_link">
+                                <a href="https://www.openstreetmap.org/#map=12/48.8253/9.5221" class="home_link">
                                     <i class="fa-solid fa-location-dot home_icon"></i>
-                                    <div><span data-i18n="location1"></span><br><span data-i18n="location2"></span>
+                                    <div><span data-i18n="location"></span>
                                     </div>
                                 </a>
                             </span>
@@ -77,7 +77,7 @@
                     <!-- 3 BUTTONS FOR HTML ONLY -->
                     <i class="fa-solid fa-moon change-theme" title="Theme" id="theme-button"></i>
                     <i class="fa-solid fa-language change-language" title="Language" id="language-button"></i>
-                    <i class="fa-solid fa-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                    <i class="fa-solid fa-download generate-pdf" title="Generate PDF" id="download-button"></i>
 
                 </section>
 
@@ -371,31 +371,31 @@
                 </section>
 
                 <!-- CERTIFICATES -->
-                <section class="certificate section" id="certificates">
-                    <h2 class="section-title" data-i18n="certificates"></h2>
+                <section class="education section" id="education">
+                    <h2 class="section-title" data-i18n="education"></h2>
 
-                    <div class="certificate_container">
-                        <div class="certificate_content">
-                            <div class="certificate_data">
-                                <h3 class="certificate_title" data-i18n="compling"></h3>
-                                <span class="certificate_institution" data-i18n="uni_stuttgart"></span>
+                    <div class="education_container">
+                        <div class="education_content">
+                            <div class="education_data">
+                                <h3 class="education_title" data-i18n="compling"></h3>
+                                <span class="education_institution" data-i18n="uni_stuttgart"></span>
 
                             </div>
-                            <span class="certificate_year">2021</span>
+                            <span class="education_year">2021</span>
                         </div>
-                        <div class="certificate_content">
-                            <div class="certificate_data">
-                                <h3 class="certificate_title" data-i18n="econ"></h3>
-                                <span class="certificate_institution">Brigham Young University, Provo, UT, USA</span>
+                        <div class="education_content">
+                            <div class="education_data">
+                                <h3 class="education_title" data-i18n="econ"></h3>
+                                <span class="education_institution">Brigham Young University, Provo, UT, USA</span>
                             </div>
-                            <span class="certificate_year">2018</span>
+                            <span class="education_year">2018</span>
                         </div>
-                        <div class="certificate_content">
-                            <div class="certificate_data">
-                                <h3 class="certificate_title" data-i18n="hs_diploma"></h3>
-                                <span class="certificate_institution">James Bowie HS, Austin TX, USA</span>
+                        <div class="education_content">
+                            <div class="education_data">
+                                <h3 class="education_title" data-i18n="hs_diploma"></h3>
+                                <span class="education_institution">James Bowie HS, Austin TX, USA</span>
                             </div>
-                            <span class="certificate_year">2011</span>
+                            <span class="education_year">2011</span>
                         </div>
                     </div>
                 </section>
@@ -455,45 +455,86 @@
                     <h2 class="section-title" data-i18n="interests"></h2>
                     <div class="interests_container">
                         <div class="interests_content">
-                            <i class="fa fa-linux interests_icon"></i>
+                            <div class="icon_box">
+                                <img src="assets/icons/tux.png" alt="Linux icon" class="custom_icon">
+                            </div>
                             <span class="interests_name">Linux</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/nix-snowflake-colours.svg" alt="Icon picture" class="custom_icon">
+                            <div class="icon_box">
+                                <img src="assets/icons/nix-snowflake-colours.svg" alt="Icon picture"
+                                    class="custom_icon">
+                            </div>
                             <span class="interests_name">NixOS</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/python.svg" alt="Python programming language icon"
-                                class="custom_icon">
+                            <div class="icon_box">
+                                <img src="assets/icons/python.svg" alt="Python programming language icon"
+                                    class="custom_icon">
+                            </div>
                             <span class="interests_name">Python</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/gopher.svg" alt="Go programming language icon" class="custom_icon">
-                            <span class="interests_name">Go</span>
-                        </div>
-                        <div class="interests_content">
-                            <!-- <i class="fa-brands fa-pytorch interests_icon"></i> -->
-                            <img src="assets/icons/pytorch-logo-flame.svg" alt="Pytorch icon" class="custom_icon">
+                            <div class="icon_box">
+                                <img src="assets/icons/pytorch-logo-flame.svg" alt="Pytorch icon" class="custom_icon">
+                            </div>
                             <span class="interests_name">Pytorch</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/tensorflow.svg" alt="TensorFlow icon" class="custom_icon">
+                            <div class="icon_box">
+                                <img src="assets/icons/tensorflow.svg" alt="TensorFlow icon" class="custom_icon">
+                            </div>
                             <span class="interests_name">TensorFlow</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/julia-dots.svg" alt="Julia programming language icon"
-                                class="custom_icon">
+                            <div class="icon_box">
+                                <img src="assets/icons/julia-dots.svg" alt="Julia programming language icon"
+                                    class="custom_icon">
+                            </div>
                             <span class="interests_name">Julia</span>
                         </div>
-                        <!-- <div class="interests_content">
-                            <img src="assets/icons/haskell.svg" alt="Haskell icon" class="custom_icon">
+
+                        <div class="interests_content">
+                            <div class="icon_box">
+                                <img src="assets/icons/gopher.svg" alt="Go programming language icon"
+                                    class="custom_icon">
+                            </div>
+                            <span class="interests_name">Go</span>
+                        </div>
+                        <div class="interests_content">
+                            <div class="icon_box">
+                                <img src="assets/icons/haskell.svg" alt="Haskell icon" class="custom_icon">
+                            </div>
                             <span class="interests_name">Haskell</span>
                         </div>
                         <div class="interests_content">
-                            <img src="assets/icons/rust-white.svg" alt="Rust programming language icon"
-                                class="custom_icon">
+                            <div class="icon_box">
+                                <img src="assets/icons/rust-red.png" alt="Rust programming language icon"
+                                    class="custom_icon">
+                            </div>
                             <span class="interests_name">Rust</span>
-                        </div> -->
+                        </div>
+                        <div class="interests_content">
+                            <div class="icon_box">
+                                <img src="assets/icons/piano.png" alt="Piano keyboard picture"
+                                    class="custom_icon">
+                            </div>
+                            <span class="interests_name" data-i18n="piano"></span>
+                        </div>
+                        <div class="interests_content">
+                            <div class="icon_box">
+                                <img src="assets/icons/polyglossia.png" alt="Polyglossia icon"
+                                    class="custom_icon">
+                            </div>
+                            <span class="interests_name" data-i18n="polyglossia"></span>
+                        </div>
+                        <div class="interests_content">
+                            <div class="icon_box">
+                                <img src="assets/icons/mountain.png" alt="Hiking icon"
+                                    class="custom_icon">
+                            </div>
+                            <span class="interests_name" data-i18n="hiking"></span>
+                        </div>
                     </div>
                 </section>
 
