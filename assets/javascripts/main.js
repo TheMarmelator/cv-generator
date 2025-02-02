@@ -3,7 +3,6 @@
 const languageButton = document.getElementById('language-button');
 const downloadButton = document.getElementById('download-button');
 const themeButton = document.getElementById('theme-button');
-const resumeButton = document.getElementById("resume-button");
 
 /* ======================== VARIABLE VALUES ================== */
 
@@ -87,7 +86,7 @@ function generateResume() {
     html2pdf(areaCV, opt);
 }
 
-/* EVENT LISTENERS */
+/* ======================== EVENT LISTENERS ======================== */
 
 languageButton.addEventListener("click", changeLanguage);
 
@@ -100,15 +99,7 @@ themeButton.addEventListener("click", () => {
     }
 });
 
-downloadButton.addEventListener('click', () => {
-    if (document.body.classList.contains(darkTheme)) {
-        downloadButton.href = "assets/pdf/myResumeCV-dark.pdf";
-    } else {
-        downloadButton.href = "assets/pdf/myResumeCV-light.pdf";
-    }
-});
-
-resumeButton.addEventListener("click", () => {
+downloadButton.addEventListener("click", () => {
     addScaleCV();
     generateResume();
     setTimeout(removeScaleCV, 1000);
