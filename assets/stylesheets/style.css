@@ -431,11 +431,12 @@ img {
 }
 
 .skills_progress_container {
+    position: initial;
     display: inline-block;
     width: 60%;
     height: var(--skills-progress-height);
     border-radius: var(--skills-progress-radius);
-    /* overflow: hidden; */
+    overflow: hidden;
     background-color: var(--text-color-lighter);
 }
 
@@ -444,6 +445,7 @@ img {
     display: block;
     height: var(--skills-progress-height);
     border-radius: var(--skills-progress-radius);
+    transform: translate(0.01px, 0);
 }
 
 /* ============================= LANGUAGES =============================  */
