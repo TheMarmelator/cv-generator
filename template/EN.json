@@ -1,5 +1,6 @@
 {
-  "apiarium_desc": " - Python toolkit for API + interfaces: 'write once, run anywhere' app as CLI, TUI, REPL, and via the Matrix protocol",
+  "apiarium_desc": " - Python toolkit for API + interfaces: 'write once, run anywhere' app as CLI, TUI, REPL, and via the Matrix protocol (WIP)",
+  "AR": "Arabic",
   "backpackertrail": "Backpackertrail",
   "bio": "Deep expertise in Python, machine learning, and Nix, complemented by proficiency in a wide array of other languages and tools. Committed to clean, maintainable software design emphasizing scalability, clarity, and robustness. Firm believer in the power of static type-checking (mypy), data models and validation (pydantic), thorough testing (pytest), and pre-commit hooks (lefthook).",
   "birthday": "15.06.1993",
@@ -32,6 +33,7 @@
   "mannheim": "Mannheim, Germany",
   "nbcat_desc": " - cat command for Jupyter notebooks, written in Go",
   "piano": "Piano",
+  "plt_desc": " - side-by-side illustrations, filterable and configurable - written in markdown, generated via python",
   "profile": "Profile",
   "polyglossia": "Polyglossia",
   "os_projects": "OPEN-SOURCE PROJECTS",
@@ -43,6 +45,7 @@
   "RU": "Russian",
   "skills": "SKILLS",
   "socials": "SOCIALS",
+  "template_desc": " - project instantiation/management template for a Python project containing a number of best-practice tools",
   "UK": "Ukrainian",
   "uni_stuttgart": "University of Stuttgart"
 }

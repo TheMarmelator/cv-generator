@@ -61,7 +61,7 @@
     --leftside-padding-left: 1rem;
     --leftside-padding-right: 1rem;
     --leftside-padding-top: 0;
-    --padding-bottom: 2rem;
+    --padding-bottom: 0.5rem;
     --rightside-padding-left: 0.5rem;
     --rightside-padding-right: 1rem;
     --rightside-padding-top: 0;
@@ -72,25 +72,26 @@
     --section-below: 0.7rem;
     --section-title-pad: 0.45rem;
 
-    --home-padding-top: 1rem;
+    --home-padding-top: 0.5rem;
     --home-data-gap: 0.25rem;
     --home-icon-font-size: 1rem;
     --home-icon-gap: 0.7rem;
 
     --personal-info-spacing: 0.5rem;
     --personal-info-gap: 1rem;
-    --personal-info-above: 1rem;
-    --personal-info-below: 1rem;
+    --personal-info-above: 0.5rem;
+    --personal-info-below: 0.5rem;
     
     --social-container-gap: 0.5rem;
-
+    --handle-padding: 2rem;
     --skills-vertical-gap: 0.2rem;
 
-    --languages-text-width: 10rem;
+    --languages-text-width: 40%;
 
+    --experience-extra-title-gap: 0.5rem;
     --experience-line-gap: 0.3rem;
-    --experience-header-below: 0.4rem;
-    --experience-block-spacing: 1.2rem;
+    --experience-header-below: 0.2rem;
+    --experience-block-spacing: 0.8rem;
 
     --education-line-spacing: 0.5rem;
     --education-gap: 1rem;
@@ -101,6 +102,7 @@
     --interests-column-gap: 1.5rem;
     --interests-row-gap: 1.5rem;
     --interests-indent: 0.8rem;
+    --interests-extra-spacing-bottom: 0.5rem;
 }
 
 *,
@@ -221,6 +223,205 @@ img {
     height: auto;
 }
 
+/* ============================= HOME ============================= */
+
+.home {
+    position: relative;
+    padding-top: var(--home-padding-top);
+}
+
+.home_container {
+    display: grid;
+    gap: var(--personal-info-spacing);
+    padding-top: var(--personal-info-above);
+    padding-bottom: var(--personal-info-below);
+}
+
+.home_container_section {
+    display: grid;
+    gap: 0;
+}
+
+/* ---------------------------- HEAD ----------------------------------*/
+
+.home_data {
+    gap: var(--home-data-gap);
+    text-align: center;
+}
+
+.home_img {
+    width: var(--profile-pic-size);
+    height: var(--profile-pic-size);
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: var(--margin-1);
+}
+
+.home_title {
+    font-size: var(--h1-font-size);
+}
+
+.home_profession {
+    font-size: var(--normal-font-size);
+}
+
+.home_items {
+    display: grid;
+    gap: var(--personal-info-spacing);
+    padding-top: var(--personal-info-gap);
+}
+
+.home_information {
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+}
+
+.home_icon {
+    font-size: var(--home-icon-font-size);
+    display: flex;
+    width: var(--home-icon-width);
+    justify-content: center;
+    margin-right: var(--home-icon-gap);
+}
+
+.home_link {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.home_link:hover {
+    color: var(--title-color);
+}
+
+/* ============================= SOCIALS =============================  */
+
+.social_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: var(--social-container-gap);
+}
+
+.social_link {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.social_link:hover {
+    color: var(--title-color);
+}
+
+.social_name {
+    color: #555;
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    display: flex;
+    align-items: top;
+}
+
+.social_handle_container {
+    width: 100%;
+    align-items: center;
+}
+
+.social_handle {
+    text-align: center;
+    padding-left: var(--handle-padding);
+}
+
+.social_icon {
+    font-size: var(--socials-icon-size);
+    display: flex;
+    width: var(--social-icon-width);
+    justify-content: center;
+}
+
+/* ============================= PROFILE =============================  */
+
+.profile_description {
+    text-align: initial;
+    font-size: var(--small-font-size);
+}
+
+/* ============================= SKILLS =============================  */
+
+.skills_content {
+    padding-left: var(--slight-indent);
+}
+
+.skills_line {
+    padding-top: var(--skills-vertical-gap);
+    justify-content: space-evenly;
+}
+
+.skills_text {
+    display: inline-block;
+    width: 35%;
+}
+
+.skills_progress_container {
+    position: initial;
+    display: inline-block;
+    width: 60%;
+    height: var(--skills-progress-height);
+    border-radius: var(--skills-progress-radius);
+    overflow: hidden;
+    background-color: var(--text-color-lighter);
+}
+
+.skills_progress {
+    background-color: var(--text-color-bright);
+    display: block;
+    height: var(--skills-progress-height);
+    border-radius: var(--skills-progress-radius);
+    transform: translate(0.01px, 0);
+}
+
+/* ============================= LANGUAGES =============================  */
+
+.languages_content {
+    padding-left: var(--slight-indent);
+}
+
+.languages_line {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.languages_text_container {
+    display: inline-block;
+    width: var(--languages-text-width);
+    vertical-align: top;
+}
+
+.languages_text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.languages_stars_container {
+    display: inline-block;
+    color: var(--text-color-bright);
+    overflow: hidden;
+}
+
+.languages_stars {
+    position: initial;
+    display: inline-block;
+    vertical-align: center;
+    color: var(--text-color-bright);
+}
+
+.languages_stars_empty {
+    display: inline-block;
+    color: var(--text-color-lighter);
+}
+
 /* ============================= EXPERIENCE =============================  */
 
 .experience_container {
@@ -230,14 +431,13 @@ img {
 }
 
 .experience_content {
+    padding-top: var(--experience-extra-title-gap);
     display: flex;
 }
 
 .experience_data {
     padding-right: var(--rightside-padding-right);
-    /* width: calc(100% - var(--rightside-padding-right)); */
-    
-    
+    /* width: calc(100% - var(--rightside-padding-right)); */  
 }
 
 .experience_heading {
@@ -362,133 +562,6 @@ img {
     
 }
 
-
-/* ============================= SOCIALS =============================  */
-
-.social_container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: var(--social-container-gap);
-}
-
-.social_link {
-    display: inline-flex;
-    align-items: center;
-    font-size: var(--small-font-size);
-    color: var(--text-color);
-}
-
-.social_link:hover {
-    color: var(--title-color);
-}
-
-.social_name {
-    color: #555;
-    font-size: var(--h3-font-size);
-    font-weight: 500;
-    display: flex;
-    align-items: top;
-}
-
-.social_handle_container {
-    width: 100%;
-    align-items: center;
-}
-
-.social_handle {
-    text-align: center;
-}
-
-.social_icon {
-    font-size: var(--socials-icon-size);
-    display: flex;
-    width: var(--social-icon-width);
-    justify-content: center;
-}
-
-/* ============================= PROFILE =============================  */
-
-.profile_description {
-    text-align: initial;
-    font-size: var(--small-font-size);
-}
-
-/* ============================= SKILLS =============================  */
-
-.skills_content {
-    padding-left: var(--slight-indent);
-}
-
-.skills_line {
-    padding-top: var(--skills-vertical-gap);
-    justify-content: space-evenly;
-}
-
-.skills_text {
-    display: inline-block;
-    width: 35%;
-}
-
-.skills_progress_container {
-    position: initial;
-    display: inline-block;
-    width: 60%;
-    height: var(--skills-progress-height);
-    border-radius: var(--skills-progress-radius);
-    overflow: hidden;
-    background-color: var(--text-color-lighter);
-}
-
-.skills_progress {
-    background-color: var(--text-color-bright);
-    display: block;
-    height: var(--skills-progress-height);
-    border-radius: var(--skills-progress-radius);
-    transform: translate(0.01px, 0);
-}
-
-/* ============================= LANGUAGES =============================  */
-
-.languages_content {
-    padding-left: var(--slight-indent);
-}
-
-.languages_line {
-    width: 100%;
-    justify-content: space-between;
-}
-
-.languages_text_container {
-    display: inline-block;
-    width: 40%;
-    vertical-align: top;
-}
-
-.languages_text {
-    display: inline-block;
-    width: var(--languages-text-width);
-    vertical-align: top;
-}
-
-.languages_stars_container {
-    display: inline-block;
-    color: var(--text-color-bright);
-    overflow: hidden;
-}
-
-.languages_stars {
-    position: initial;
-    display: inline-block;
-    vertical-align: center;
-    color: var(--text-color-bright);
-}
-
-.languages_stars_checked {
-    display: inline-block;
-    color: var(--text-color-lighter);
-}
-
 /* ============================= INTERESTS ============================= */
 
 .interests_container {
@@ -500,6 +573,7 @@ img {
     column-gap: var(--interests-column-gap);
     row-gap: var(--interests-row-gap);
     padding-left: var(--rightside-indent);
+    padding-bottom: var(--interests-extra-spacing-bottom);
     width: calc(var(--right-side-width) - 5em);
 }
 
@@ -528,78 +602,6 @@ img {
     color: var(--text-color-light);
 } */
 
-/* ============================= HOME ============================= */
-
-.home {
-    position: relative;
-    padding-top: var(--home-padding-top);
-}
-
-.home_container {
-    display: grid;
-    gap: var(--personal-info-spacing);
-    padding-top: var(--personal-info-above);
-    padding-bottom: var(--personal-info-below);
-}
-
-.home_container_section {
-    display: grid;
-    gap: 0;
-}
-
-/* ---------------------------- HEAD ----------------------------------*/
-
-.home_data {
-    gap: var(--home-data-gap);
-    text-align: center;
-}
-
-.home_img {
-    width: var(--profile-pic-size);
-    height: var(--profile-pic-size);
-    border-radius: 50%;
-    justify-self: center;
-    margin-bottom: var(--margin-1);
-}
-
-.home_title {
-    font-size: var(--h1-font-size);
-}
-
-.home_profession {
-    font-size: var(--normal-font-size);
-}
-
-.home_items {
-    display: grid;
-    gap: var(--personal-info-spacing);
-    padding-top: var(--personal-info-gap);
-}
-
-.home_information {
-    display: flex;
-    align-items: center;
-    font-size: var(--small-font-size);
-}
-
-.home_icon {
-    font-size: var(--home-icon-font-size);
-    display: flex;
-    width: var(--home-icon-width);
-    justify-content: center;
-    margin-right: var(--home-icon-gap);
-}
-
-.home_link {
-    display: inline-flex;
-    align-items: center;
-    font-size: var(--small-font-size);
-    color: var(--text-color);
-}
-
-.home_link:hover {
-    color: var(--title-color);
-}
 
 /* ============================= BROWSER-ONLY BUTTONS ============================= */
 

@@ -1,9 +1,10 @@
 {
-  "apiarium_desc": " - Python-Toolkit für API + Schnittstellen: „write once, run anywhere“-App als CLI, TUI, REPL und über das Matrix-Protokoll",
+  "apiarium_desc": " - Python-Toolkit für API + Schnittstellen: „write once, run anywhere“-App als CLI, TUI, REPL und über das Matrix-Protokoll (in Entwicklung)",
+  "AR": "Arabisch",
   "backpackertrail": "Backpackertrail",
   "bio": "Ich verfüge über weitreichende Expertise in Python, ML und Nix, ergänzt durch fundierte Kenntnisse in einer Vielzahl weiterer Sprachen und Werkzeuge. Ich stehe für sauberes und wartbares Softwaredesign, das sich durch Skalierbarkeit, Klarheit und Robustheit auszeichnet. Ich bin überzeugter Befürworter der Vorteile von statischer Typprüfung (mypy), Datenmodellen und -validierung (pydantic), umfassendem Testen (pytest) und Pre-Commit-Hooks (lefthook).",
   "birthday": "15.06.1993",
-  "bpt_1": "Entwicklung eines Reverse-Image-Search-Systems für Reiseempfehlungen, erstellt mit TensorFlow.",
+  "bpt_1": "Entwicklung eines Reverse-Image-Search-Systems mit TensorFlow.",
   "bpt_2": "Entwicklung eines automatischen Routenplanungswerkzeugs mit ORTools.",
   "bpt_role": "PRAKTIKANT DATA SCIENCE",
   "bpt_time": "Oktober 2020 - März 2021",
@@ -32,10 +33,11 @@
   "mannheim": "Mannheim",
   "nbcat_desc": " - cat-Befehl für Jupyter-Notebooks (auf Go geschrieben)",
   "piano": "Klavier",
+  "plt_desc": "parallele Beispiele von Programmiersprachen, filterbar und konfigurierbar (Markdown, Python, HTML, CSS, JS)",
   "polyglossia": "Polyglossie",
   "profile": "ÜBER MICH",
   "os_projects": "OPEN-SOURCE-PROJEKTE",
-  "ra_1": "Implementierung eines XGBoost-gestützten Systems für den datensatzübergreifenden Entitätsabgleich im Kontext der wirtschaftshistorischen Forschung.",
+  "ra_1": "Implementierung eines Systems für den datensatzübergreifenden Entitätsabgleich im Kontext der wirtschaftshistorischen Forschung.",
   "ra_2": "Erstellung einer Pipeline zur Bereinigung und NER von Patentdatensätzen.",
   "ra_3": "Mitveröffentlichung von zwei wissenschaftlichen peer-reviewed Artikeln.",
   "ra_time": "Juli 2015 - Mai 2019",
@@ -43,6 +45,7 @@
   "RU": "Russisch",
   "skills": "KOMPETENZEN",
   "socials": "PROFILE",
+  "template_desc": "- Projektinstanzierungs-/Verwaltungsvorlage für ein Python-Projekt mit einer Reihe von Best-Practice-Tools",
   "UK": "Ukrainisch",
   "uni_stuttgart": "Universität Stuttgart"
 }

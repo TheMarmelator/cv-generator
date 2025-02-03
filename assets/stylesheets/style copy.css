@@ -508,7 +508,7 @@ body.scale-cv {
     /* overflow: hidden; */
 }
 
-.languages_stars_checked {
+.languages_stars_empty {
     display: inline-block;
     color: var(--text-color-lighter);
     /* overflow: hidden; */
