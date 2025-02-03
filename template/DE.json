@@ -1,5 +1,5 @@
 {
-  "apiarium_desc": " - Python-Toolkit für API + Schnittstellen: „write once, run anywhere“-App als CLI, TUI, REPL und über das Matrix-Protokoll (in Entwicklung)",
+  "apiarium_desc": " - Python-Toolkit für API + Schnittstellen: „write once, run anywhere“-App als CLI, TUI, REPL und über das Matrix-Protokoll (WIP)",
   "AR": "Arabisch",
   "backpackertrail": "Backpackertrail",
   "bio": "Ich verfüge über weitreichende Expertise in Python, ML und Nix, ergänzt durch fundierte Kenntnisse in einer Vielzahl weiterer Sprachen und Werkzeuge. Ich stehe für sauberes und wartbares Softwaredesign, das sich durch Skalierbarkeit, Klarheit und Robustheit auszeichnet. Ich bin überzeugter Befürworter der Vorteile von statischer Typprüfung (mypy), Datenmodellen und -validierung (pydantic), umfassendem Testen (pytest) und Pre-Commit-Hooks (lefthook).",
@@ -24,9 +24,9 @@
   "interests": "INTERESSEN",
   "knecon_1": "Mitwirkung an der Entwicklung einer LLM-basierten Plattform zur Dokumentenanalyse mit RAG und Integration externer Datenquellen.",
   "knecon_2": "Verwendung von AzureML, MLFlow, Gitlab CI/CD und Kubernetes für die Entwicklung und Bereitstellung von Machine-Learning-Pipelines.",
-  "knecon_3": "Entwurf, Training und Bereitstellung einer NLU-/NER-basierten Schnittstelle für ein integriertes Desktop-Suchtool.",
-  "knecon_4": "Entwicklung eines Services zur Gesichtsschwärzung unter Verwendung von dlib, C++ und Python.",
-  "knecon_5": "Erstellung und Pflege zahlreicher Utility-Pakete und Infrastruktur-Tools für den internen Gebrauch.",
+  "knecon_3": "Entwurf, Training und Bereitstellung einer NLU-/NER-basierten Schnittstelle mit Pytorch und ONNX für ein lokales, plattformübergreifendes Desktop-Suchtool.",
+  "knecon_4": "Entwicklung eines hochperformanten Services zur Gesichtsschwärzung unter Verwendung von dlib, C++ und Python.",
+  "knecon_5": "Erstellung und Wartung zahlreicher Utility-Pakete und Infrastruktur-Tools für den internen Gebrauch, u.a. Logging, Traceability, ML-Modell-Verwaltung.",
   "knecon_time": "Oktober 2021 - heute",
   "languages": "SPRACHEN",
   "location1": "Vogtswiesen 5, Schorndorf 73614",
@@ -45,7 +45,7 @@
   "RU": "Russisch",
   "skills": "KOMPETENZEN",
   "socials": "PROFILE",
-  "template_desc": "- Projektinstanzierungs-/Verwaltungsvorlage für ein Python-Projekt mit einer Reihe von Best-Practice-Tools",
+  "template_desc": "- Projektinstanzierungs- / Verwaltungsvorlage für Python mit einer Reihe von Best-Practice-Tools",
   "UK": "Ukrainisch",
   "uni_stuttgart": "Universität Stuttgart"
 }

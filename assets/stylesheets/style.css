@@ -39,6 +39,7 @@
     --smaller-font-size: 0.688rem;
     --tiny-font-size: .63rem;
     --socials-icon-size: 1rem;
+    --title-letter-spacing: .1rem;
 
     /* FONT WEIGHTS */
     --font-medium: 500;
@@ -61,35 +62,34 @@
     --leftside-padding-left: 1rem;
     --leftside-padding-right: 1rem;
     --leftside-padding-top: 0;
-    --padding-bottom: 0.5rem;
-    --rightside-padding-left: 0.5rem;
-    --rightside-padding-right: 1rem;
-    --rightside-padding-top: 0;
+    --padding-bottom: 1rem;
+    --rightside-padding-left: 0.8rem;
+    --rightside-padding-right: 2rem;
+    --rightside-padding-top: 1rem;
     --slight-indent: 0.2rem;
-    --rightside-indent: 0.7rem;
+    --rightside-indent: 0.5rem;
 
     --section-above: 0.7rem;
-    --section-below: 0.7rem;
-    --section-title-pad: 0.45rem;
+    --section-below: 0.5rem;
+    --section-title-pad: 0.65rem;
 
-    --home-padding-top: 0.5rem;
+    --home-padding-top: 1rem;
     --home-data-gap: 0.25rem;
     --home-icon-font-size: 1rem;
     --home-icon-gap: 0.7rem;
 
     --personal-info-spacing: 0.5rem;
     --personal-info-gap: 1rem;
-    --personal-info-above: 0.5rem;
-    --personal-info-below: 0.5rem;
+    --personal-info-above: 0.0rem;
+    --personal-info-below: 0.0rem;
     
     --social-container-gap: 0.5rem;
+    --social-icon-padding-right: 0.5rem;
     --handle-padding: 2rem;
-    --skills-vertical-gap: 0.2rem;
+    --skills-vertical-gap: 0.0rem;
 
-    --languages-text-width: 40%;
-
-    --experience-extra-title-gap: 0.5rem;
-    --experience-line-gap: 0.3rem;
+    --experience-extra-title-gap: 0.1rem;
+    --experience-line-gap: 0.6rem;
     --experience-header-below: 0.2rem;
     --experience-block-spacing: 0.8rem;
 
@@ -99,10 +99,10 @@
     --projects-vertical-spacing: 0.5rem;    
 
     --interests-item-min-width: 2rem;
-    --interests-column-gap: 1.5rem;
+    --interests-column-gap: 2.5rem;
     --interests-row-gap: 1.5rem;
     --interests-indent: 0.8rem;
-    --interests-extra-spacing-bottom: 0.5rem;
+    --interests-extra-spacing-bottom: 0.3rem;
 }
 
 *,
@@ -148,17 +148,17 @@ html {
     max-width: var(--width);
 }
 
-.section {
+/* .section {
     padding-top: var(--section-above);
     padding-bottom: var(--section-below);
-}
+} */
 
 .section-title {
     font-size: var(--h1-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
-    letter-spacing: .25rem;
+    letter-spacing: var(--title-letter-spacing);
     padding-bottom: var(--section-title-pad);
 }
 
@@ -300,9 +300,10 @@ img {
 
 .social_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: var(--social-container-gap);
+    padding-right: var(--social-icon-padding-right);
 }
 
 .social_link {
@@ -367,7 +368,7 @@ img {
 .skills_progress_container {
     position: initial;
     display: inline-block;
-    width: 60%;
+    width: 63%;
     height: var(--skills-progress-height);
     border-radius: var(--skills-progress-radius);
     overflow: hidden;
@@ -382,52 +383,13 @@ img {
     transform: translate(0.01px, 0);
 }
 
-/* ============================= LANGUAGES =============================  */
-
-.languages_content {
-    padding-left: var(--slight-indent);
-}
-
-.languages_line {
-    width: 100%;
-    justify-content: space-between;
-}
-
-.languages_text_container {
-    display: inline-block;
-    width: var(--languages-text-width);
-    vertical-align: top;
-}
-
-.languages_text {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.languages_stars_container {
-    display: inline-block;
-    color: var(--text-color-bright);
-    overflow: hidden;
-}
-
-.languages_stars {
-    position: initial;
-    display: inline-block;
-    vertical-align: center;
-    color: var(--text-color-bright);
-}
-
-.languages_stars_empty {
-    display: inline-block;
-    color: var(--text-color-lighter);
-}
-
 /* ============================= EXPERIENCE =============================  */
 
 .experience_container {
-    width: var(--right-side-width);
+    width: calc(0.5rem + var(--right-side-width) - var(--rightside-padding-left) - var(--rightside-padding-right));
     display: grid;
     gap: var(--experience-block-spacing);
+    width: var(--right-side-width);
 }
 
 .experience_content {
@@ -436,10 +398,10 @@ img {
 }
 
 .experience_data {
-    padding-right: var(--rightside-padding-right);
-    /* width: calc(100% - var(--rightside-padding-right)); */  
+    width: 100%;
 }
 
+/* FULL LINE 1 */
 .experience_heading {
     display: flex;
     justify-content: space-between;
@@ -456,6 +418,7 @@ img {
     font-size: var(--larger-font-size);
 }
 
+/* FULL LINE 2 */
 .experience_info {
     display: flex;
     justify-content: space-between;
@@ -486,30 +449,36 @@ img {
 .experience_description {
     color: var(--text-color-light);
     padding-left: var(--rightside-indent);
-    padding-right: var(--rightside-padding-right);
+    /* padding-right: var(--rightside-padding-right); */
+    width: 93%;
     padding-top: var(--experience-line-gap);
+    line-height: 1rem;
 }
 
 /* ============================= CERTIFICATE =============================  */
 
 .education_container {
     display: grid;
-    width: 100%;
+    /* width: calc(var(--right-side-width) - var(--rightside-padding-left) - var(--rightside-padding-right)); */
     gap: var(--education-line-spacing);
     padding-left: var(--rightside-indent);
+    /* padding-right: var(--rightside-padding-right); */
+    width: calc(0.5rem + var(--right-side-width) - var(--rightside-padding-left) - var(--rightside-padding-right));
+}
+
+/* FULL LINE */
+.education_content {
+    display: flex;
+    justify-content: space-between;
+    /* padding-right: var(--rightside-padding-right); */
 }
 
 .education_data {
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     gap: var(--education-gap);
-}
-
-.education_content {
-    display: flex;
-    justify-content: space-between;
 }
 
 .education_institution {
@@ -568,13 +537,13 @@ img {
     display: grid;
     justify-content: space-between;
     vertical-align: center;
-    margin-top: var(--margin-2);
+    /* margin-top: var(--margin-2); */
     grid-template-columns: repeat(6, max-content);
     column-gap: var(--interests-column-gap);
     row-gap: var(--interests-row-gap);
     padding-left: var(--rightside-indent);
     padding-bottom: var(--interests-extra-spacing-bottom);
-    width: calc(var(--right-side-width) - 5em);
+    width: calc(var(--right-side-width) - 3em);
 }
 
 .interests_content {
