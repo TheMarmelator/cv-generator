@@ -82,7 +82,7 @@
     --personal-info-gap: 1rem;
     --personal-info-above: 0.0rem;
     --personal-info-below: 0.0rem;
-    
+
     --social-container-gap: 0.5rem;
     --social-icon-padding-right: 0.5rem;
     --handle-padding: 2rem;
@@ -96,7 +96,7 @@
     --education-line-spacing: 0.5rem;
     --education-gap: 1rem;
 
-    --projects-vertical-spacing: 0.5rem;    
+    --projects-vertical-spacing: 0.5rem;
 
     --interests-item-min-width: 2rem;
     --interests-column-gap: 2.5rem;
@@ -528,7 +528,7 @@ img {
 
 .project_description {
     color: var(--text-color-light);
-    
+
 }
 
 /* ============================= INTERESTS ============================= */

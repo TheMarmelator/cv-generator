@@ -53,6 +53,7 @@ function changeLanguage() {
 }
 
 function enableDarkMode() {
+    console.log('Switching to dark mode.')
     document.body.classList.add(darkTheme);
     themeButton.classList.add('fa-sun');
     themeButton.classList.remove('fa-moon');
@@ -60,6 +61,7 @@ function enableDarkMode() {
 };
 
 function disableDarkMode() {
+    console.log('Switching to light mode.')
     document.body.classList.remove(darkTheme);
     themeButton.classList.add('fa-moon');
     themeButton.classList.remove('fa-sun');
@@ -114,3 +116,5 @@ interpolateStrings(currentLang.toUpperCase());
 if (darkMode === "enabled") {
     enableDarkMode();
 }
+
+console.log('Hi Brenda!')
