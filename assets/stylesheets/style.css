@@ -68,6 +68,7 @@
     --rightside-padding-top: 1rem;
     --slight-indent: 0.2rem;
     --rightside-indent: 0.5rem;
+    --rightside-indent-sub: 1rem;
 
     --section-above: 0.7rem;
     --section-below: 0.5rem;
@@ -300,7 +301,7 @@ img {
 
 .social_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: var(--social-container-gap);
     padding-right: var(--social-icon-padding-right);
@@ -359,6 +360,11 @@ img {
     padding-top: var(--skills-vertical-gap);
     justify-content: space-evenly;
 }
+.skills_more {
+    color: #555;
+    margin-top: 0.5rem;
+    font-size: var(--smaller-font-size);
+}
 
 .skills_text {
     display: inline-block;
@@ -401,6 +407,19 @@ img {
     width: 100%;
 }
 
+.experience_header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.experience_header_no_icon {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 /* FULL LINE 1 */
 .experience_heading {
     display: flex;
@@ -408,6 +427,12 @@ img {
     align-items: center;
     width: 100%;
     padding-right: var(--rightside-padding-right);
+}
+
+.experience_icon {
+    max-width: 3rem;
+    max-height: 3rem;
+    margin-right: 0.75rem;
 }
 
 .experience_title {
@@ -455,6 +480,15 @@ img {
     line-height: 1rem;
 }
 
+.experience_description.sub {
+    color: var(--text-color-light);
+    padding-left: var(--rightside-indent-sub);
+    /* padding-right: var(--rightside-padding-right); */
+    width: 93%;
+    padding-top: var(--experience-line-gap);
+    line-height: 0.9rem;
+}
+
 /* ============================= CERTIFICATE =============================  */
 
 .education_container {
@@ -466,11 +500,21 @@ img {
     width: calc(0.5rem + var(--right-side-width) - var(--rightside-padding-left) - var(--rightside-padding-right));
 }
 
+.education_content_wrapper {
+    margin-bottom: 0.75rem;
+}
 /* FULL LINE */
 .education_content {
     display: flex;
     justify-content: space-between;
     /* padding-right: var(--rightside-padding-right); */
+}
+/* FULL LINE */
+.education_content.sub {
+    margin-left: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--small-font-size);
 }
 
 .education_data {
@@ -506,18 +550,18 @@ img {
 }
 
 .projects_data {
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
 .projects_icon {
     display: inline;
+    height: var(--h3-font-size);
 }
 
 .projects_content {
     display: inline;
     justify-content: left;
-    padding-left: var(--rightside-indent);
 }
 
 .projects_title {
@@ -528,17 +572,17 @@ img {
 
 .project_description {
     color: var(--text-color-light);
-
+    font-size: var(--small-font-size);
 }
 
 /* ============================= INTERESTS ============================= */
 
 .interests_container {
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     vertical-align: center;
     /* margin-top: var(--margin-2); */
-    grid-template-columns: repeat(6, max-content);
+    grid-template-columns: repeat(3, max-content);
     column-gap: var(--interests-column-gap);
     row-gap: var(--interests-row-gap);
     padding-left: var(--rightside-indent);
@@ -554,6 +598,31 @@ img {
     flex-direction: column;
     align-items: center;
     min-width: var(--interests-item-min-width);
+}
+
+.interests_highlight_container {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.interests_highlight {
+    height: var(--interests-item-height);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: var(--interests-item-min-width);
+}
+
+.interests_achievement {
+    font-size: var(--smaller-font-size);
+    margin-left: 1rem;
+}
+
+.interests_name {
+    white-space: nowrap;
 }
 
 .custom_icon {

@@ -1,9 +1,9 @@
 <!--
  ┌───────────────────────────────────────────────────────────────────────┐
  │ @name         CV generator                                            │
- │ @author       Isaac Riley                                             │
+ │ @author       Kilian Schüttler                                        │
  │ @version      1.0                                                     │
- │ @created      2025-01-18                                              │
+ │ @created      2025-04-01                                              │
  │ @description  CV built with HTML+CSS+JS: dark mode toggle, PDF export │
  └───────────────────────────────────────────────────────────────────────┘
 -->
@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Isaac Riley CV</title>
+    <title>Kilian Schüttler CV</title>
 
     <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css">
@@ -29,612 +29,510 @@
 </head>
 
 <body>
-    <main class="main_area">
-        <!-- Resume CV -->
-        <div class="resume" id="area-cv">
-            <div class="resume_left">
+<main class="main_area">
+    <!-- Resume CV -->
+    <div class="resume" id="area-cv">
+        <div class="resume_left">
 
-                <!-- HOME -->
-                <section class="home" id="home">
-                    <div class="home_container section">
+            <!-- HOME -->
+            <section class="home" id="home">
+                <div class="home_container section">
 
-                        <div class="home_data">
-                            <img src="assets/pictures/profile-black.jpg" alt="Icon picture" class="home_img"
-                                id="home-img">
-                            <h1 class="home_title">ISAAC <b>RILEY</b></h1>
-                            <h3 class="home_profession">Machine Learning Engineer</h3>
-                            <!-- <div>
-                                <a download="" id="download-button">Download</a>
-                            </div> -->
-                        </div>
+                    <div class="home_data">
+                        <img src="assets/pictures/profile-kilian.jpg" alt="Icon picture" class="home_img"
+                             id="home-img">
+                        <h1 class="home_title">KILIAN <b>SCHÜTTLER</b></h1>
+                        <h3 class="home_profession">AI Software Engineer</h3>
+                        <!-- <div>
+                            <a download="" id="download-button">Download</a>
+                        </div> -->
+                    </div>
 
-                        <div class="home_items">
+                    <div class="home_items">
                             <span class="home_information">
                                 <a class="home_link">
                                     <i class="fa-solid fa-calendar home_icon"></i> <span data-i18n="birthday"></span>
                                 </a>
                             </span>
-                            <span class="home_information">
-                                <a href="https://www.openstreetmap.org/#map=12/48.8253/9.5221" class="home_link">
+                        <span class="home_information">
+                                <a href="https://www.openstreetmap.org/way/244627079#map=13/49.51183/8.51372"
+                                   class="home_link">
                                     <i class="fa-solid fa-location-dot home_icon"></i>
                                     <div><span data-i18n="location"></span>
                                     </div>
                                 </a>
                             </span>
-                            <span class="home_information">
-                                <a href="mailto:isaac.r.riley@proton.me" class="home_link">
-                                    <i class="fa-solid fa-envelope home_icon"></i> isaac.r.riley@proton.me
+                        <span class="home_information">
+                                <a href="mailto:kilian.schuettler@gmail.com" class="home_link">
+                                    <i class="fa-solid fa-envelope home_icon"></i> kilian.schuettler@gmail.com
                                 </a>
                             </span>
-                            <span class="home_information">
-                                <a href="tel:+4901627174019" class="home_link">
-                                    <i class="fa-solid fa-phone home_icon"></i> +49 0162 7174019
+                        <span class="home_information">
+                                <a href="tel:+49017634355875" class="home_link">
+                                    <i class="fa-solid fa-phone home_icon"></i> +49 176 34355875
                                 </a>
                             </span>
-                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 BUTTONS FOR HTML ONLY -->
+                <i class="fa-solid fa-moon change-theme" title="Theme" id="theme-button"></i>
+                <i class="fa-solid fa-language change-language" title="Language" id="language-button"></i>
+                <i class="fa-solid fa-download generate-pdf" title="Generate PDF" id="download-button"></i>
+
+            </section>
+
+            <!-- PROFILE -->
+            <section class="profile section" id="profile">
+                <h2 class="section-title" data-i18n="profile"></h2>
+
+                <p class="profile_description" data-i18n="bio"></p>
+            </section>
+
+            <!-- SOCIAL -->
+            <section class="social section">
+                <div class="social_name">
+                    <h2 class="section-title" data-i18n="socials"></h2>
+                    <div class="social_handle_container">
+                        <a class="social_handle">@TheMarmelator</a>
                     </div>
 
-                    <!-- 3 BUTTONS FOR HTML ONLY -->
-                    <i class="fa-solid fa-moon change-theme" title="Theme" id="theme-button"></i>
-                    <i class="fa-solid fa-language change-language" title="Language" id="language-button"></i>
-                    <i class="fa-solid fa-download generate-pdf" title="Generate PDF" id="download-button"></i>
+                </div>
+                <div class="social_container">
+                    <a href="https://github.com/themarmelator" target="_blank" class="social_link">
+                        <i class="fa-brands fa-github social_icon"></i></a>
+                    <a href="www.linkedin.com/in/kilian-schüttler-540ab72b5" target="_blank" class="social_link">
+                        <i class="fa-brands fa-linkedin social_icon"></i></a>
+                </div>
+            </section>
 
-                </section>
 
-                <!-- PROFILE -->
-                <section class="profile section" id="profile">
-                    <h2 class="section-title" data-i18n="profile"></h2>
+            <section class="projects section" id="projects">
+                <h2 class="section-title" data-i18n="projects"></h2>
+                <div class="projects_container">
+                    <div class="projects_content">
+                        <div class="projects_data">
+                            <img
+                                    src="/assets/icons/pdf-forge-logo-30x30.png"
+                                    class="projects_icon"
+                                    alt="PDF Forge Logo"
+                            />
+                            <a class="projects_title" href="https://www.pdf-forge.com">PDF Forge</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_description" data-i18n="forge_1"></div>
+            </section>
 
-                    <p class="profile_description" data-i18n="bio"></p>
-                </section>
+            <!-- SKILLS  -->
+            <section class="skills section" id="skills">
+                <h2 class="section-title" data-i18n="skills"></h2>
+                <div class="skills_container">
+                    <div class="skills_content">
 
-                <!-- SOCIAL -->
-                <section class="social section">
-                    <div class="social_name">
-                        <h2 class="section-title" data-i18n="socials"></h2>
-                        <div class="social_handle_container">
-                            <a class="social_handle">@yelircaasi</a>
+                        <div class="skills_line">
+                            <span class="skills_text">Java</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 100%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">Python</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 98%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">Spring (Boot)</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 95%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">Git</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 95%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">TypeScript</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 90%;"></span>
+                            </div>
+                        </div>
+                        <div class="skills_line">
+                            <span class="skills_text">JavaScript</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 90%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">Svelte</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 80%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">Angular</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 75%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">TensorFlow</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 65%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">Rust</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 60%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">PyTorch</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 50%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills_line">
+                            <span class="skills_text">C/C++</span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 45%;"></span>
+                            </div>
                         </div>
 
                     </div>
-                    <div class="social_container">
-                        <a href="https://github.com/yelircaasi" target="_blank" class="social_link">
-                            <i class="fa-brands fa-github social_icon"></i></a>
-                        <a href="https://www.linkedin.com/in/yelircaasi/" target="_blank" class="social_link">
-                            <i class="fa-brands fa-linkedin social_icon"></i></a>
-                        <a href="https://goodreads.com/yelircaasi" target="_blank" class="social_link">
-                            <i class="fa-brands fa-goodreads social_icon"></i></a>
-                        <a href="https://rheinneckar.social/@yelircaasi" target="_blank" class="social_link">
-                            <i class="fa-brands fa-mastodon social_icon"></i></a>
-                        <a href="https://bsky.app/profile/yelircaasi.bsky.social" target="_blank" class="social_link">
-                            <i class="fa-brands fa-bluesky social_icon"></i></a>
-                        <a href="https://www.reddit.com/user/yelircaasi/" target="_blank" class="social_link">
-                            <i class="fa-brands fa-reddit social_icon"></i></a>
+                    <div class="skills_more"> Azure IDP, CosmosDB, Azure Blob Storage, Bash, Docker, Kubernetes, helm,
+                        Leptonica,
+                        Tesseract, Ghostscript, PDFTron Apache PDFBox, pdf-rs, pdf.js, PdfPig, OpenCV, FEniCS,
+                        preCICE, Redis, PostgreSQL, MongoDB, ElasticSearch, OpenSearch, RabbitMQ, S3, Jira,
+                        Confluence, Liquibase, Tailwind, CSS, HTML
                     </div>
-                </section>
+                </div>
 
-                <!-- SKILLS  -->
-                <section class="skills section" id="skills">
-                    <h2 class="section-title" data-i18n="skills"></h2>
-                    <div class="skills_container">
-                        <div class="skills_content">
+            </section>
 
-                            <div class="skills_line">
-                                <span class="skills_text">Python</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 100%;"></span>
-                                </div>
-                            </div>
+            <!-- LANGUAGES -->
+            <section class="skills section" id="languages">
+                <h2 class="section-title" data-i18n="languages"></h2>
+                <div class="skills_container">
+                    <div class="skills_content">
 
-                            <div class="skills_line">
-                                <span class="skills_text">Nix/NixOS</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 95%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">Git</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 95%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">Bash</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">PyTorch</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">TensorFlow</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 85%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">Julia</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">HTML+CSS</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 75%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">Go</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 65%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">TypeScript</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 50%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">Haskell</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 40%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text">Rust</span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 35%;"></span>
-                                </div>
+                        <div class="skills_line">
+                            <span class="skills_text" data-i18n="DE"></span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 100%;"></span>
                             </div>
                         </div>
-                    </div>
 
-                </section>
-
-                <!-- LANGUAGES -->
-                <section class="skills section" id="skills">
-                    <h2 class="section-title" data-i18n="languages"></h2>
-                    <div class="skills_container">
-                        <div class="skills_content">
-
-                            <div class="skills_line">
-                                <span class="skills_text" data-i18n="EN"></span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 100%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text" data-i18n="DE"></span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 95%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text" data-i18n="RU"></span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 85%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text" data-i18n="FR"></span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text" data-i18n="UK"></span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 75%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text" data-i18n="ES"></span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 60%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills_line">
-                                <span class="skills_text" data-i18n="AR"></span>
-                                <div class="skills_progress_container">
-                                    <span class="skills_progress" style="width: 35%;"></span>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-                    </div>
-
-                </section>
-
-
-
-
-
-
-                <!-- <section class="languages section" id="languages">
-                    <h2 class="section-title" data-i18n="languages"></h2>
-
-                    <div class="languages_container">
-                        <ul class="languages_content">
-                            <div class="languages_line">
-                                <div class="languages_text_container">
-                                    <span class="languages_text" data-i18n="EN"></span>
-                                </div>
-                                <div class="languages_stars_container">
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="languages_line">
-                                <div class="languages_text_container">
-                                    <span class="languages_text" data-i18n="DE"></span>
-                                </div>
-                                <div class="languages_stars_container">
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="languages_line">
-                                <div class="languages_text_container">
-                                    <span class="languages_text" data-i18n="UK"></span>
-                                </div>
-                                <div class="languages_stars_container">
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star languages_stars_empty"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="languages_line">
-                                <div class="languages_text_container">
-                                    <span class="languages_text" data-i18n="RU"></span>
-                                </div>
-                                <div class="languages_stars_container">
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star languages_stars_empty"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="languages_line">
-                                <div class="languages_text_container">
-                                    <span class="languages_text" data-i18n="FR"></span>
-                                </div>
-                                <div class="languages_stars_container">
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star languages_stars_empty"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="languages_line">
-                                <div class="languages_text_container">
-                                    <span class="languages_text" data-i18n="ES"></span>
-                                </div>
-                                <div class="languages_stars_container">
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star languages_stars_empty"></i>
-                                        <i class="fa-solid fa-star languages_stars_empty"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="languages_line">
-                                <div class="languages_text_container">
-                                    <span class="languages_text" data-i18n="AR"></span>
-                                </div>
-                                <div class="languages_stars_container">
-                                    <span class="languages_stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star languages_stars_empty"></i>
-                                        <i class="fa-solid fa-star languages_stars_empty"></i>
-                                        <i class="fa-solid fa-star languages_stars_empty"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                </section> -->
-            </div>
-            <div class="right_side_main">
-
-                <!-- EXPERIENCE -->
-                <section class="experience section" id="experience">
-                    <h2 class="section-title" data-i18n="experience"></h2>
-
-                    <div class="experience_container">
-                        <div class="experience_content">
-                            <div class="experience_data">
-                                <div class="experience_heading">
-                                    <h3 class="experience_title">RESEARCH ENGINEER</h3>
-                                    <span class="experience_time" data-i18n="knecon_time"></span>
-                                </div>
-
-                                <div class="experience_info">
-                                    <span class="experience_company">knecon Technologie GmbH</span>
-                                    <div>
-                                        <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
-                                        <span class="experience_location" data-i18n="mannheim"></span>
-                                    </div>
-                                </div>
-
-                                <p class="experience_description" data-i18n="knecon_1"></p>
-                                <p class="experience_description" data-i18n="knecon_2"></p>
-                                <p class="experience_description" data-i18n="knecon_3"></p>
-                                <p class="experience_description" data-i18n="knecon_4"></p>
-                                <p class="experience_description" data-i18n="knecon_5"></p>
-                            </div>
-                        </div>
-                        <div class="experience_content">
-                            <div class="experience_data">
-                                <div class="experience_heading">
-                                    <h3 class="experience_title" data-i18n="bpt_role"></h3>
-                                    <span class="experience_time" data-i18n="bpt_time"></span>
-                                </div>
-
-                                <div class="experience_info">
-                                    <span class="experience_company" data-i18n="backpackertrail"></span>
-                                    <div>
-                                        <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
-                                        <span class="experience_location" data-i18n="heidelberg"></span>
-                                    </div>
-                                </div>
-
-                                <p class="experience_description" data-i18n="bpt_1"></p>
-                                <p class="experience_description" data-i18n="bpt_2"></p>
-                            </div>
-                        </div>
-                        
-                        <div class="experience_content">
-                            <div class="experience_bullet">
-
-                            </div>
-                            <div class="experience_data">
-                                <div class="experience_heading">
-                                    <h3 class="experience_title" data-i18n="research_assistant"></h3>
-                                    <span class="experience_time" data-i18n="ra_time"></span>
-                                </div>
-                                <div class="experience_info">
-                                    <span class="experience_company" data-i18n="econ_department"></span>
-                                    <div>
-                                        <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
-                                        <span class="experience_location">Provo, UT, USA</span>
-                                    </div>
-                                </div>
-                                <p class="experience_description" data-i18n="ra_1"></p>
-                                <p class="experience_description" data-i18n="ra_2"></p>
-                                <p class="experience_description" data-i18n="ra_3"></p>
+                        <div class="skills_line">
+                            <span class="skills_text" data-i18n="EN"></span>
+                            <div class="skills_progress_container">
+                                <span class="skills_progress" style="width: 98%;"></span>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <!-- CERTIFICATES -->
-                <section class="education section" id="education">
-                    <h2 class="section-title" data-i18n="education"></h2>
+            </section>
 
-                    <div class="education_container">
-                        <div class="education_content">
-                            <div class="education_data">
-                                <h3 class="education_title" data-i18n="compling"></h3>
-                                <span class="education_institution" data-i18n="uni_stuttgart"></span>
 
-                            </div>
-                            <span class="education_year">2021</span>
-                        </div>
-                        <div class="education_content">
-                            <div class="education_data">
-                                <h3 class="education_title" data-i18n="econ"></h3>
-                                <span class="education_institution">Brigham Young University, Provo, UT, USA</span>
-                            </div>
-                            <span class="education_year">2018</span>
-                        </div>
-                        <div class="education_content">
-                            <div class="education_data">
-                                <h3 class="education_title" data-i18n="hs_diploma"></h3>
-                                <span class="education_institution">James Bowie HS, Austin TX, USA</span>
-                            </div>
-                            <span class="education_year">2011</span>
-                        </div>
-                    </div>
-                </section>
+            <!-- <section class="languages section" id="languages">
+                <h2 class="section-title" data-i18n="languages"></h2>
 
-                <!-- OPEN SOURCE PROJECTS / CONTRIBUTIONS -->
-                <section class="projects section" id="projects">
-                    <h2 class="section-title" data-i18n="os_projects"></h2>
-
-                    <div class="projects_container">
-                        <div class="projects_content">
-                            <div class="projects_data">
-                                <i class="fa-brands fa-github projects_icon"></i>
-                                <a class="projects_title" href="https://github.com/yelircaasi/nbcat">nbcat</a>
-                                <span class="project_description" data-i18n="nbcat_desc"></span>
+                <div class="languages_container">
+                    <ul class="languages_content">
+                        <div class="languages_line">
+                            <div class="languages_text_container">
+                                <span class="languages_text" data-i18n="EN"></span>
+                            </div>
+                            <div class="languages_stars_container">
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
                             </div>
                         </div>
-                        <div class="projects_content">
-                            <div class="projects_data">
-                                <i class="fa-brands fa-github projects_icon"></i>
-                                <a class="projects_title" href="https://github.com/yelircaasi/datethyme">datethyme</a>
-                                <span class="project_description" data-i18n="datethyme_desc"></span>
+                        <div class="languages_line">
+                            <div class="languages_text_container">
+                                <span class="languages_text" data-i18n="DE"></span>
+                            </div>
+                            <div class="languages_stars_container">
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
                             </div>
                         </div>
-                        <div class="projects_content">
-                            <div class="projects_data">
-                                <i class="fa-brands fa-github projects_icon"></i>
-                                <a class="projects_title"
-                                    href="https://github.com/RosettaProjects/programming-language-table">programming-language-table</a>
-                                <span class="project_description" data-i18n="plt_desc"></span>
+                        <div class="languages_line">
+                            <div class="languages_text_container">
+                                <span class="languages_text" data-i18n="UK"></span>
+                            </div>
+                            <div class="languages_stars_container">
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_empty"></i>
+                                </span>
                             </div>
                         </div>
-                        <div class="projects_content">
-                            <div class="projects_data">
-                                <i class="fa-brands fa-github projects_icon"></i>
-                                <a class="projects_title"
-                                    href="https://github.com/RosettaProjects/copier-template-python-uv-nix">copier-template-python-uv-nix</a>
-                                <span class="project_description" data-i18n="template_desc"></span>
+                        <div class="languages_line">
+                            <div class="languages_text_container">
+                                <span class="languages_text" data-i18n="RU"></span>
+                            </div>
+                            <div class="languages_stars_container">
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_empty"></i>
+                                </span>
                             </div>
                         </div>
-                        <div class="projects_content">
-                            <div class="projects_data">
-                                <i class="fa-brands fa-github projects_icon"></i>
-                                <a class="projects_title" href="https://github.com/yelircaasi/apiarium">apiarium</a>
-                                <span class="project_description" data-i18n="apiarium_desc"></span>
+                        <div class="languages_line">
+                            <div class="languages_text_container">
+                                <span class="languages_text" data-i18n="FR"></span>
+                            </div>
+                            <div class="languages_stars_container">
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_empty"></i>
+                                </span>
                             </div>
                         </div>
-                        <!-- <div class="projects_content">
-                            <div class="projects_data">
-                                <i class="fa-brands fa-github projects_icon"></i>
-                                <a class="projects_title" href="https://github.com/yelircaasi/nix-config">nix-config</a>
-                                <span class="project_description"> - Nix declaration for both NixOS and Nix on non-NixOS</span>
+                        <div class="languages_line">
+                            <div class="languages_text_container">
+                                <span class="languages_text" data-i18n="ES"></span>
+                            </div>
+                            <div class="languages_stars_container">
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_empty"></i>
+                                    <i class="fa-solid fa-star languages_stars_empty"></i>
+                                </span>
                             </div>
                         </div>
-                        <div class="projects_content">
-                            <div class="projects_data">
-                                <i class="fa-brands fa-github projects_icon"></i>
-                                <a class="projects_title" href="https://github.com/yelircaasi/nix-config">nix-config</a>
-                                <span class="project_description"> - Nix declaration for both NixOS and Nix on non-NixOS</span>
+                        <div class="languages_line">
+                            <div class="languages_text_container">
+                                <span class="languages_text" data-i18n="AR"></span>
                             </div>
-                        </div> -->
-                    </div>
-                </section>
-
-                <!-- INTERESTS -->
-                <section class="interests section" id="interests">
-                    <h2 class="section-title" data-i18n="interests"></h2>
-                    <div class="interests_container">
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/tux.png" alt="Linux icon" class="custom_icon">
+                            <div class="languages_stars_container">
+                                <span class="languages_stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star languages_stars_empty"></i>
+                                    <i class="fa-solid fa-star languages_stars_empty"></i>
+                                    <i class="fa-solid fa-star languages_stars_empty"></i>
+                                </span>
                             </div>
-                            <span class="interests_name">Linux</span>
                         </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/nix-snowflake-colours.svg" alt="Icon picture"
-                                    class="custom_icon">
-                            </div>
-                            <span class="interests_name">NixOS</span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/python.svg" alt="Python programming language icon"
-                                    class="custom_icon">
-                            </div>
-                            <span class="interests_name">Python</span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/pytorch-logo-flame.svg" alt="Pytorch icon" class="custom_icon">
-                            </div>
-                            <span class="interests_name">Pytorch</span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/tensorflow.svg" alt="TensorFlow icon" class="custom_icon">
-                            </div>
-                            <span class="interests_name">TensorFlow</span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/julia-dots.svg" alt="Julia programming language icon"
-                                    class="custom_icon">
-                            </div>
-                            <span class="interests_name">Julia</span>
-                        </div>
-
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/gopher.svg" alt="Go programming language icon"
-                                    class="custom_icon">
-                            </div>
-                            <span class="interests_name">Go</span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/haskell.svg" alt="Haskell icon" class="custom_icon">
-                            </div>
-                            <span class="interests_name">Haskell</span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/rust-red.png" alt="Rust programming language icon"
-                                    class="custom_icon">
-                            </div>
-                            <span class="interests_name">Rust</span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/piano.png" alt="Piano keyboard picture" class="custom_icon">
-                            </div>
-                            <span class="interests_name" data-i18n="piano"></span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/polyglossia.png" alt="Polyglossia icon" class="custom_icon">
-                            </div>
-                            <span class="interests_name" data-i18n="polyglossia"></span>
-                        </div>
-                        <div class="interests_content">
-                            <div class="icon_box">
-                                <img src="assets/icons/mountain.png" alt="Hiking icon" class="custom_icon">
-                            </div>
-                            <span class="interests_name" data-i18n="hiking"></span>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
+                    </ul>
+                </div>
+            </section> -->
         </div>
-    </main>
+        <div class="right_side_main">
 
-    <script src="assets/javascripts/html2pdf.v0.9.3.bundle.min.js"></script>
-    <script src="assets/javascripts/main.js"></script>
+            <!-- EXPERIENCE -->
+            <section class="experience section" id="experience">
+                <h2 class="section-title" data-i18n="experience"></h2>
+
+                <div class="experience_container">
+                    <div class="experience_content">
+                        <div class="experience_data">
+                            <div class="experience_header">
+                                <img src="assets/icons/knecon.png" alt="knecon-logo" class="experience_icon"/>
+                                <div class="experience_header_no_icon">
+                                    <div class="experience_heading">
+                                        <h3 class="experience_title">SOFTWARE ENGINEER</h3>
+                                        <span class="experience_time" data-i18n="knecon_time"></span>
+                                    </div>
+                                    <div class="experience_info">
+                                        <span class="experience_company">knecon Technologie GmbH</span>
+                                        <div>
+                                            <img src="assets/icons/location.svg" alt="location icon"
+                                                 class="location_icon">
+                                            <span class="experience_location" data-i18n="mannheim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="experience_description" data-i18n="knecon_1"></p>
+                            <p class="experience_description" data-i18n="knecon_2"></p>
+                            <p class="experience_description" data-i18n="knecon_4"></p>
+                            <p class="experience_description" data-i18n="knecon_5"></p>
+                            <p class="experience_description" data-i18n="knecon_3"></p>
+                            <p class="experience_description sub" data-i18n="knecon_3_0"></p>
+                            <p class="experience_description sub" data-i18n="knecon_3_1"></p>
+                            <p class="experience_description sub" data-i18n="knecon_3_2"></p>
+                            <p class="experience_description sub" data-i18n="knecon_3_3"></p>
+                            <p class="experience_description sub" data-i18n="knecon_3_4"></p>
+                            <p class="experience_description sub" data-i18n="knecon_3_5"></p>
+                        </div>
+                    </div>
+
+                    <div class="experience_data">
+                        <div class="experience_header">
+                            <img src="assets/icons/herox.png" alt="herox-logo" class="experience_icon"/>
+                            <div class="experience_header_no_icon">
+                                <div class="experience_heading">
+                                    <h3 class="experience_title">NASA HeroX Challenger</h3>
+                                    <span class="experience_time" data-i18n="nasa_time"></span>
+                                </div>
+                                <div class="experience_info">
+                                    <span class="experience_company">KSat Stuttgart e.V.
+                                        <a target="_blank" class="social_link" href="www.herox.com/NASApayload">www.herox.com/NASApayload
+                                        </a>
+                                    </span>
+                                    <div>
+                                        <img src="assets/icons/location.svg" alt="location icon"
+                                             class="location_icon">
+                                        <span class="experience_location" data-i18n="stuttgart"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="experience_description" data-i18n="nasa_1"></p>
+                        <p class="experience_description" data-i18n="nasa_2"></p>
+                    </div>
+
+                    <div class="experience_content">
+                        <div class="experience_data">
+                            <div class="experience_heading">
+                                <h3 class="experience_title" data-i18n="eckert_role"></h3>
+                                <span class="experience_time" data-i18n="eckert_time"></span>
+                            </div>
+
+                            <div class="experience_info">
+                                <span class="experience_company" data-i18n="eckert"></span>
+                                <div>
+                                    <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
+                                    <span class="experience_location" data-i18n="stuttgart"></span>
+                                </div>
+                            </div>
+
+                            <p class="experience_description" data-i18n="eckert_1"></p>
+                            <p class="experience_description" data-i18n="eckert_2"></p>
+                        </div>
+                    </div>
+
+                    <div class="experience_content">
+                        <div class="experience_data">
+                            <div class="experience_heading">
+                                <h3 class="experience_title" data-i18n="itadm"></h3>
+                                <span class="experience_time" data-i18n="itadm_time"></span>
+                            </div>
+                            <div class="experience_info">
+                                <span class="experience_company" data-i18n="bbplat"></span>
+                                <div>
+                                    <img src="assets/icons/location.svg" alt="location icon" class="location_icon">
+                                    <span class="experience_location" data-i18n="stuttgart"></span>
+                                </div>
+                            </div>
+                            <p class="experience_description" data-i18n="bbplat_1"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATES -->
+            <section class="education section" id="education">
+                <h2 class="section-title" data-i18n="education"></h2>
+
+                <div class="education_container">
+                    <div class="education_content_wrapper">
+                        <div class="education_content">
+                            <div class="education_data">
+                                <h3 class="education_title" data-i18n="compsci"></h3>
+                                <span class="education_institution" data-i18n="uni_stuttgart"></span>
+                            </div>
+                            <span class="education_year">2022</span>
+                        </div>
+                        <div class="education_content sub">
+                            <div>Thesis</div>
+                            <div data-i18n="compsci_thesis"></div>
+                        </div>
+                    </div>
+
+                    <div class="education_content">
+                        <div class="education_data">
+                            <h3 class="education_title" data-i18n="hs_diploma"></h3>
+                            <span class="education_institution">Karl Friedrich Gymnasium, Mannheim</span>
+                        </div>
+                        <span class="education_year">2016</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- INTERESTS -->
+            <section class="interests section" id="interests">
+                <h2 class="section-title" data-i18n="interests"></h2>
+                <div class="interests_highlight_container">
+                    <div class="interests_highlight">
+                        <div class="icon_box">
+                            <img src="assets/icons/football.png" alt="Football icon" class="custom_icon">
+                        </div>
+                        <span class="interests_name">American Football</span>
+                    </div>
+                    <div>
+                        <div data-i18n="football_national" class="interests_achievement"></div>
+                        <div data-i18n="football_scorps" class="interests_achievement"></div>
+                    </div>
+                </div>
+                <div class="interests_container">
+                    <div class="interests_content">
+                        <div class="icon_box">
+                            <img src="assets/icons/piano.png" alt="Piano keyboard picture" class="custom_icon">
+                        </div>
+                        <span class="interests_name" data-i18n="piano"></span>
+                    </div>
+                    <div class="interests_content">
+                        <div class="icon_box">
+                            <img src="assets/icons/ableton.svg" alt="Ableton icon" class="custom_icon">
+                        </div>
+                        <span class="interests_name">Ableton</span>
+                    </div>
+                    <div class="interests_content">
+                        <div class="icon_box">
+                            <img src="assets/icons/bouldering.png" alt="climbing icon" class="custom_icon">
+                        </div>
+                        <span class="interests_name">Climbing</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<script src="assets/javascripts/html2pdf.v0.9.3.bundle.min.js"></script>
+<script src="assets/javascripts/main.js"></script>
 </body>
 
 </html>
