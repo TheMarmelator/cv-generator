@@ -80,7 +80,7 @@ function generateResume() {
     const areaCV = document.getElementById('area-cv');
     const opt = {
         margin: 0,
-        filename: `IsaacRileyCV_${currentLang.toUpperCase()}.pdf`,
+        filename: `KilianSchuettlerCV_${currentLang.toUpperCase()}.pdf`,
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 4, useCORS: true },
         jsPDF: { format: 'a4', orientation: 'portrait' }
