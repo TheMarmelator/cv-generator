@@ -81,8 +81,8 @@ function generateResume() {
     const opt = {
         margin: 0,
         filename: `KilianSchuettlerCV_${currentLang.toUpperCase()}.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 4, useCORS: true },
+        image: { type: 'jpeg', quality: 0.5 },
+        html2canvas: { scale: 8, useCORS: true },
         jsPDF: { format: 'a4', orientation: 'portrait' }
     };
     html2pdf(areaCV, opt);
